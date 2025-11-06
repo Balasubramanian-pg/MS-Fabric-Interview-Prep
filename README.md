@@ -19,8 +19,6 @@ Like are they even any interview questions?
 - **Direct Lake Mode**: Power BI connects directly to OneLake (no data duplication).
 - **Shortcuts**: Virtualize data (no physical copy).
 
----
-
 ### **2. OneLake**
 **Basics**:
 - **Storage**: Delta Parquet format (open standard).
