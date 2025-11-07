@@ -84,8 +84,6 @@ Like are they even any interview questions?
 - **Transformations**: Filter, aggregate, join, derive columns.
 - **Sink**: Write to OneLake, SQL, or Dataverse.
 
----
-
 ### **4. Synapse Data Engineering (Spark)**
 **Notebooks**:
 - **Languages**: Spark SQL, PySpark, Scala, R.
