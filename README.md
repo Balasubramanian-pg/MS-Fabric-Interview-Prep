@@ -48,8 +48,6 @@ Like are they even any interview questions?
   GRANT SELECT ON TABLE Sales TO USER 'user@domain.com';
   ```
 
----
-
 ### **3. Data Factory (Pipelines)**
 **Key Concepts**:
 - **Pipelines**: Workflow of activities (e.g., copy, transform).
