@@ -444,7 +444,6 @@ If you get stuck, remember these "Fabric Truths":
 * **V-Order** = Microsoft's secret sauce for speed.
 * **Smoothing** = 24-hour average for background jobs.
 
----
 
 ### **Final Word of Advice**
 
