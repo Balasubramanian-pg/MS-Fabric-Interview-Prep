@@ -1,6 +1,3 @@
-To dive even deeper into the "nitty-gritty" of Microsoft Fabric, here are 100 **additional** unique questions. These focus on edge cases, advanced optimization, governance, and specific architectural trade-offs.
-
----
 
 ## **Part 6: Deep-Dive OneLake & Storage (101–120)**
 
