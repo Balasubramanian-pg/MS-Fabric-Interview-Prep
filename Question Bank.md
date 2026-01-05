@@ -1,3 +1,136 @@
+To help you ace your Microsoft Fabric interview, I have organized 100 questions into key categories. These range from fundamental concepts to advanced scenarios you'll likely face in technical rounds.
+
+---
+
+## **Part 1: Foundational & Architecture (1–20)**
+
+1. **What is Microsoft Fabric?** A unified SaaS analytics platform that combines data integration, engineering, warehousing, and BI.
+2. **Is Fabric a SaaS or PaaS?** It is a **SaaS** (Software as a Service) offering.
+3. **Explain the "OneLake" concept.** It is the "OneDrive for data"—a single, unified, logical data lake for the entire organization.
+4. **What is a "Shortcuts" in OneLake?** A way to virtualize data from external sources (ADLS Gen2, S3) without moving or copying it.
+5. **What is the default storage format for Fabric?** **Delta Parquet.**
+6. **How does Fabric differ from Azure Synapse Analytics?** Fabric is SaaS-based and more integrated, whereas Synapse is PaaS-based and often requires managing separate resources.
+7. **What are the primary "experiences" (workloads) in Fabric?** Data Factory, Data Engineering, Data Science, Data Warehouse, Real-Time Intelligence, and Power BI.
+8. **What is the role of the "Capacity" in Fabric?** It defines the pool of resources (compute/memory) available for all Fabric workloads.
+9. **What is a Workspace in Fabric?** A container for items (Lakehouses, Warehouses, Pipelines) where users collaborate.
+10. **Explain the Medallion Architecture (Bronze, Silver, Gold).** A data design pattern for organizing data quality: Raw (Bronze), Cleansed/Joined (Silver), and Aggregated/Business-ready (Gold).
+11. **Can Fabric be used without Power BI?** Yes, but Power BI is the native visualization layer.
+12. **What is the "Direct Lake" mode in Power BI?** A breakthrough mode that queries OneLake data directly without importing it or using DirectQuery.
+13. **What is a "Tenant" in the context of Fabric?** The highest level of organization, typically representing a whole company.
+14. **What is the "Fabric Capacity Metrics App"?** An app used by admins to monitor CPU and memory consumption.
+15. **Does Fabric support Multi-cloud?** Yes, via shortcuts to AWS S3 and Google Cloud Storage.
+16. **What is a "Semantic Model"?** The new term for Power BI datasets—the logical layer containing relationships and measures.
+17. **How does Fabric handle data governance?** Primarily through integration with **Microsoft Purview**.
+18. **What is the "Real-Time Hub"?** A central place to manage all streaming data and events.
+19. **What is the difference between a "Lakehouse" and a "Warehouse"?** A Lakehouse is Spark-centric and supports files/tables; a Warehouse is T-SQL centric with full ACID transactions.
+20. **What is "Universal Security" in Fabric?** The ability to define a security policy once in OneLake that applies across Spark, SQL, and Power BI.
+
+---
+
+## **Part 2: Data Engineering & Spark (21–40)**
+
+21. **What is a Lakehouse in Fabric?** An architecture that combines the cost-benefit of a lake with the performance of a warehouse.
+22. **What languages are supported in Fabric Notebooks?** PySpark (Python), Spark SQL, Scala, and R.
+23. **What is a "V-Order" optimization?** A Microsoft-specific write-time optimization for Parquet files that makes reads significantly faster.
+24. **How do you handle "Schema Drift"?** By using Spark's `mergeSchema` option or Dataflow Gen2's auto-detect features.
+25. **What is the "Optimize" command used for?** To compact small files and improve query performance (Z-Ordering).
+26. **Explain "Time Travel" in Delta Lake.** Accessing historical versions of a table using `versionAsOf` or `timestampAsOf`.
+27. **What is the "Vacuum" command?** It removes old data files no longer referenced by a Delta table to save space.
+28. **How do you share data between different Workspaces?** Using OneLake shortcuts.
+29. **What is a "Spark Job Definition"?** A way to schedule and run Spark code (JAR or Python) without a notebook UI.
+30. **What are "Starter Pools"?** Pre-warmed Spark clusters that allow notebooks to start in seconds.
+31. **Can you use third-party libraries in Fabric Spark?** Yes, using `%pip install` or Environment configurations.
+32. **What is the difference between PySpark and Spark SQL?** PySpark uses Python API; Spark SQL uses standard SQL syntax.
+33. **How do you perform an "Upsert" in Fabric?** By using the `MERGE INTO` SQL command.
+34. **What is "Z-Ordering"?** A technique to colocate related information in the same set of files.
+35. **What are "Environments" in Fabric?** A way to manage Spark runtimes, libraries, and configurations for a workspace.
+36. **How do you monitor Spark job progress?** Via the "Monitoring" hub or the Spark UI.
+37. **What is the default Spark version in Fabric?** (Verify current version, usually 3.4/3.5).
+38. **Explain "Checkpointing" in Spark Streaming.** Saving state information to OneLake to recover from failures.
+39. **Can you read a CSV file into a Lakehouse?** Yes, and it is usually converted to Delta for performance.
+40. **How do you secure a Lakehouse?** Using Workspace roles and OneLake Data Access Roles (preview).
+
+---
+
+## **Part 3: Data Factory & Pipelines (41–60)**
+
+41. **What is "Dataflow Gen2"?** A low-code ETL tool built on Power Query that writes directly to Fabric destinations.
+42. **Difference between Dataflow Gen1 (Power BI) and Gen2?** Gen2 supports "Data Destinations" (Lakehouse/Warehouse) and high-scale compute.
+43. **What is an "Activity" in a Pipeline?** A single task, like "Copy Data" or "Invoke Notebook."
+44. **What is "Fast Copy"?** A high-throughput data movement capability in Dataflow Gen2.
+45. **Can you trigger a Pipeline from another Pipeline?** Yes, using the "Invoke Pipeline" activity.
+46. **How do you handle errors in a Pipeline?** Using "On Failure" paths or "Try-Catch" logic patterns.
+47. **What is a "Webhook" activity?** It allows calling external REST APIs and waiting for a response.
+48. **How do you schedule a Pipeline?** Using the "Schedule" trigger in the Pipeline settings.
+49. **What is an "Expression" in Fabric Pipelines?** Using functions like `@concat()` or `@variables()` to make pipelines dynamic.
+50. **How do you connect to On-Premises data?** By using the **On-Premises Data Gateway**.
+51. **What is "Mirroring" in Fabric?** A zero-ETL way to replicate data from databases like Snowflake, Cosmos DB, or SQL Server.
+52. **What is a "Staging" table in Dataflow Gen2?** A temporary storage used to improve transformation performance.
+53. **How do you parameterize a Connection?** Using Pipeline parameters and dynamic content.
+54. **What is the "Copy Activity"?** The core tool for moving large volumes of data between sources.
+55. **Can you use "Lookup" activities?** Yes, to retrieve configuration values or metadata.
+56. **What is "Incremental Load"?** Only moving data that has changed since the last run.
+57. **How do you implement a "Watermark" in Fabric?** Store the last processed date in a table and filter the source query.
+58. **What is the "ForEach" activity?** An activity used to iterate over a collection (like a list of files).
+59. **Can you run SSIS packages in Fabric?** Not directly; they must be migrated or run in Azure-SSIS IR (via ADF).
+60. **What is "Data Activator"?** A no-code tool to set up alerts based on data changes (e.g., "Email me if sales drop").
+
+---
+
+## **Part 4: Data Warehouse & SQL (61–80)**
+
+61. **What is the Synapse Data Warehouse in Fabric?** A T-SQL based warehouse that stores data in Delta format but acts like a SQL server.
+62. **Does the Warehouse support Stored Procedures?** Yes, full T-SQL support.
+63. **What is a "Cross-database query" in Fabric?** Querying data across different Lakehouses and Warehouses using T-SQL.
+64. **Difference between "Lakehouse SQL Endpoint" and "Warehouse"?** The Endpoint is read-only for Lakehouse tables; the Warehouse is read-write.
+65. **What is a "Materialized View"?** A pre-computed table that improves query performance for complex joins.
+66. **What is "Primary Key" enforcement in Fabric?** Fabric allows defining PKs, but they are "non-enforced" (user must ensure uniqueness).
+67. **How do you load data into a Warehouse?** Using `COPY INTO`, Pipelines, or Dataflows.
+68. **What is "Burstable Compute" in Warehouse?** The ability to scale up compute temporarily for heavy queries.
+69. **Explain "Column-level Security" (CLS).** Restricting access to specific columns for certain users.
+70. **How do you optimize a slow T-SQL query?** Check indexes (Clustered Columnstore), partitioning, and statistics.
+71. **What is "Result Set Caching"?** Storing the results of a query to speed up identical subsequent queries.
+72. **Can you use `OPENROWSET` in Fabric?** Yes, to query files directly from OneLake.
+73. **What is a "Virtual Warehouse"?** A compute layer that is separate from the physical storage in OneLake.
+74. **Does Fabric Warehouse support transactions?** Yes, it supports multi-statement ACID transactions.
+75. **How do you handle "Slowly Changing Dimensions" (SCD)?** Using SQL `MERGE` or Spark code.
+76. **What is the "SQL Analytics Endpoint"?** A read-only T-SQL interface automatically created for every Lakehouse.
+77. **How do you manage users in a Warehouse?** Via Workspace roles or SQL-level `GRANT/REVOKE`.
+78. **What is "Data Masking"?** Obfuscating sensitive data (like SSNs) for non-privileged users.
+79. **Can you use SQL Server Management Studio (SSMS) with Fabric?** Yes, using the SQL connection string.
+80. **What is "V-Order" in the context of the Warehouse?** It is applied automatically to all tables in the Warehouse.
+
+---
+
+## **Part 5: Real-Time, Science & Power BI (81–100)**
+
+81. **What is KQL (Kusto Query Language)?** A language optimized for searching through logs and streaming data.
+82. **What is an "Eventstream"?** A Fabric item used to capture, transform, and route streaming data.
+83. **What is the "KQL Database"?** A store for high-velocity, real-time data.
+84. **How do you visualize real-time data?** Using Power BI Real-time dashboards or KQL queries.
+85. **What is the "Data Science" experience?** A workspace for building Machine Learning models using MLflow.
+86. **How do you track ML experiments?** Using **MLflow** integration.
+87. **What is "Predict" in Fabric?** A T-SQL function to run ML model scoring directly in SQL.
+88. **How do you register an ML Model?** Within the Data Science experience using the Model registry.
+89. **What is the "Direct Lake" benefit?** Zero latency—reports update as soon as the data is written to OneLake.
+90. **Can you use DAX in Fabric?** Yes, DAX is the language for measures in Semantic Models.
+91. **What is "Git Integration"?** Connecting a Fabric workspace to an Azure DevOps or GitHub repo for CI/CD.
+92. **How do you deploy from Dev to Prod?** Using **Deployment Pipelines**.
+93. **What is "Microsoft Purview Information Protection"?** Applying sensitivity labels (e.g., "Confidential") to data.
+94. **How do you handle Large Datasets in Power BI?** Use Direct Lake or Large Dataset Storage format.
+95. **What is a "Fabric Item"?** Any object like a Report, Notebook, or Lakehouse.
+96. **How do you check Fabric Service health?** Via the Microsoft Fabric Support/Status page.
+97. **Can you automate Fabric tasks with API?** Yes, using the **Fabric REST APIs**.
+98. **What is "Copilot for Fabric"?** An AI assistant that helps write code, queries, and create reports.
+99. **How do you optimize Power BI report performance?** Reduce visual count, use Star Schema, and leverage Direct Lake.
+100. **Why would a company choose Fabric over Snowflake?** Integration with the Microsoft ecosystem (Office 365, Teams), unified SaaS experience, and Direct Lake performance.
+
+---
+
+[Microsoft Fabric for Data Engineers](https://www.youtube.com/watch?v=k5Xpp2v8DT8)
+This video provides a practical breakdown of data engineering pipelines and common interview scenarios for the Microsoft Fabric platform.
+
+**Would you like me to create a mock interview script for a specific role, such as a Fabric Data Engineer or Power BI Architect?**
 
 ## **Part 6: Deep-Dive OneLake & Storage (101–120)**
 
