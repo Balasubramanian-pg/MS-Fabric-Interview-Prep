@@ -263,3 +263,140 @@ To round out your preparation, here are **100 more unique questions (201–300)*
 With 300 questions, you have covered almost every corner of the platform. Since you requested to know if I "don't know" something: Microsoft Fabric is evolving fast, so **always check the latest monthly update blog** for changes to "Preview" features like **Mirroring** or **Fabric Git Integration**.
 
 **Would you like me to generate a "Cheat Sheet" of the most important T-SQL and PySpark commands used specifically in Fabric?**
+
+This final set of **100 questions (301–400)** pushes into the "Black Belt" territory of Microsoft Fabric. These cover internal engine mechanics, complex migration patterns, high-level security architecture, and the intersection of AI with the data platform.
+
+---
+
+## **Part 16: Internal Engines & Mechanics (301–320)**
+
+301. **Polaris Engine:** How does the Polaris distributed SQL engine differ from the traditional SQL Server engine in Fabric?
+302. **Delta Log Checkpoints:** How does Fabric handle Delta Lake JSON logs to prevent "Log Swelling" during high-frequency ingestion?
+303. **V-Order Bit-Shuffling:** Explain the technical mechanism of how V-Order reorders data within a Parquet file to optimize for the "Pushdown" filters.
+304. **Intelligent Caching:** How does the "NVMe-based cache" in Fabric capacity work for frequently accessed OneLake data?
+305. **Vector Search in KQL:** How do you implement vector embeddings in a KQL database for RAG (Retrieval-Augmented Generation) scenarios?
+306. **Spark "Optimistic Concurrency Control":** What happens when two Spark jobs try to write to the same Delta table simultaneously?
+307. **T-SQL Metadata Synchronizer:** How does Fabric ensure that a table created in Spark is immediately visible in the SQL Analytics Endpoint?
+308. **Parquet Page Indexing:** How does Fabric leverage page-level metadata to skip irrelevant data during a scan?
+309. **OneLake "Single Instance Storage":** If two workspaces have shortcuts to the same ADLS file, how many times is it cached?
+310. **Transaction Log Compaction:** What is the "Bin-packing" algorithm used by the `OPTIMIZE` command?
+311. **Direct Lake Metadata Handshake:** How does Power BI know the "Log Version" of a Delta table has changed without a manual refresh?
+312. **SQL Distributed Query Processing (DQP):** How are `JOIN` operations distributed across compute nodes in a Fabric Warehouse?
+313. **Kusto "Shard" Allocation:** How does a KQL database distribute data across nodes for sub-second query response?
+314. **Dataflow Gen2 "Mashup" Evaluation:** How is the M-engine containerized within Fabric capacity?
+315. **Spark Thrift Server:** Can you connect external BI tools to Fabric Spark clusters via JDBC/ODBC?
+316. **OneLake Proxy Service:** How does Fabric handle the redirection of legacy ADLS Gen2 API calls to OneLake?
+317. **Materialized Views Refresh:** Is the refresh logic for materialized views "Incremental" or "Full" by default?
+318. **Broadcast Joins in Spark:** How do you force a broadcast join in a Fabric Notebook when the optimizer misses it?
+319. **Predicate Pushdown across Shortcuts:** Can a SQL query "push down" a filter to an AWS S3 bucket via a Shortcut?
+320. **Delta Lake "Deletion Vectors":** Does Fabric support Deletion Vectors to speed up `UPDATE` and `DELETE` operations?
+
+---
+
+## **Part 17: Enterprise Security & Network Hardening (321–340)**
+
+321. **Service Tags:** How do you configure Azure Firewall to allow Fabric traffic without opening the entire internet?
+322. **Managed Private Endpoints (Advanced):** How do you connect a Fabric Notebook to a SQL Server that has "Public Access" disabled?
+323. **OneLake Data Access Roles (ODAR):** How do these differ from standard Workspace Roles (Admin/Member/Contributor)?
+324. **Cross-Tenant OneLake Access:** Is it possible to create a Shortcut to a Lakehouse in a completely different Azure Tenant?
+325. **Granular SQL Permissions:** How do you grant `EXECUTE` on a stored procedure without giving `SELECT` on the underlying tables?
+326. **Identity Passthrough:** Does Fabric support Entra ID identity passthrough when using Shortcuts to ADLS Gen2?
+327. **Entra ID Privileged Identity Management (PIM):** How does PIM interact with Fabric Capacity Administration?
+328. **Service Principal Authentication:** How do you run a Fabric Pipeline using a Service Principal instead of a user identity?
+329. **Workspace "Lockdown" Mode:** How do you prevent users from creating new items while allowing them to consume existing ones?
+330. **Sensitivity Label Downstream Inheritance:** If a Lakehouse table is labeled "Highly Confidential," what happens to a Power BI report built on it?
+331. **Audit Log Latency:** How long does it take for a "Table Deleted" event to show up in the Purview Audit logs?
+332. **Row-Level Security (RLS) Performance:** At what point (number of rules) does RLS begin to degrade T-SQL query performance?
+333. **Encryption at Rest:** Can customers provide their own keys (BYOK) for the underlying OneLake storage?
+334. **Network Isolation for Dataflows:** How do you ensure Dataflow Gen2 traffic stays within the Azure Backbone?
+335. **Trusted Service Access:** How do you allow Fabric to access a Storage Account that has "Allow trusted Microsoft services" enabled?
+336. **IP Address Filtering:** Can you restrict Fabric access to a specific range of corporate IP addresses?
+337. **Multi-Factor Authentication (MFA) Challenges:** How do automated Spark jobs handle MFA-enforced accounts? (Hint: They can't; use Service Principals).
+338. **Purview Data Policy:** Can you enforce "Access Denied" via Purview instead of Fabric Workspace roles?
+339. **Security of "Mirroring" Credentials:** Where are the source database credentials stored and encrypted?
+340. **OneLake "Files" Security:** Can you set different permissions on the `Files` folder vs the `Tables` folder within the same Lakehouse?
+
+---
+
+## **Part 18: Advanced CI/CD & DevOps (341–360)**
+
+341. **Fabric Git Integration:** What happens if there is a "Merge Conflict" in a Spark Notebook metadata file?
+342. **Deployment Pipelines "Rules":** How do you automatically change the "Data Source" string when moving a pipeline from Dev to Prod?
+343. **Notebook Parameterization:** How do you pass values from a DevOps release pipeline into a Fabric Notebook?
+344. **API-Based Deployment:** How would you use Python to programmatically deploy 50 Lakehouses across 50 Workspaces?
+345. **Fabric .Platform Files:** What is the purpose of the `.platform` file in a Fabric Git-synced repo?
+346. **Version Control for Semantic Models:** How do you manage the BIM/TMDL files for Power BI within a Fabric workspace?
+347. **Automated Testing:** How do you integrate "Great Expectations" or "nutter" for Spark testing into a Fabric CI/CD flow?
+348. **Rollback Strategy:** If a deployment fails, how do you "Undo" the Git sync to a previous stable state?
+349. **Environment Configuration Files:** How do you manage different Python library versions across Dev, Test, and Prod?
+350. **Dataflow Gen2 Git Support:** (As of now) What are the limitations of syncing Dataflows to Git?
+351. **Fabric PowerShell Module:** Which module is used to manage Fabric capacities via script?
+352. **Service Principal Git Auth:** Can a Git-synced workspace use a Service Principal for the sync, or does it require a "User" token?
+353. **Monitoring CI/CD:** How do you track the "Success Rate" of deployments across the tenant?
+354. **Gated Deployments:** How do you prevent a Pipeline from deploying to Prod until a "Data Quality" check passes?
+355. **Infrastructure as Code (IaC):** Can you use Bicep or Terraform to create a Fabric Lakehouse?
+356. **Workspace "Template" creation:** How do you standardize the folder structure of new workspaces?
+357. **Managing "Orphaned" Items:** How do you identify items in Git that no longer exist in the Workspace?
+358. **Hotfix Workflow:** What is the best practice for fixing a bug in Prod without disrupting the Dev branch?
+359. **Diffing Notebooks:** How do you view the differences between two versions of a Spark Notebook in the Fabric UI?
+360. **Deployment Pipeline API:** Can you trigger a "Deploy" action using a REST API call?
+
+---
+
+## **Part 19: AI, Data Science & Copilot (361–380)**
+
+361. **Copilot for Data Engineering:** How does Copilot generate Spark code based on the schema of a Lakehouse?
+362. **AI Functions in T-SQL:** How do you use `PREDICT` with a model stored in the Fabric Model Registry?
+363. **MLflow Tracking:** How do you log "Artifacts" (like plots or CSVs) in a Fabric ML Experiment?
+364. **Custom AI Skill:** What is a "Fabric AI Skill" and how does it allow users to "Chat with their data"?
+365. **Hugging Face Integration:** How do you load a pre-trained transformer model into a Fabric Spark session?
+366. **GPU Support:** Does Fabric Spark currently support GPU-accelerated clusters for Deep Learning?
+367. **Semantic Link (SemPy):** How do you use Spark to query a Power BI measure and use the result in an ML model?
+368. **Responsible AI:** How do you implement "Data Masking" before feeding Lakehouse data into a Large Language Model (LLM)?
+369. **SynapseML Library:** What are the "Cognitive Services" integrations available within the SynapseML library in Fabric?
+370. **Model Serving:** How do you expose a Fabric-trained model as a REST endpoint for an external web app?
+371. **Data Sanitization for Copilot:** How do you prevent Copilot from accessing sensitive HR data within a shared workspace?
+372. **Hyperparameter Tuning:** How do you use `FLAML` or `Hyperopt` within a Fabric Notebook?
+373. **Fabric OpenAI Integration:** How do you securely call Azure OpenAI using a Managed Identity from a Notebook?
+374. **Vector Databases in Fabric:** When would you use a KQL Database vs. a Spark-based vector store?
+375. **AI-Driven Data Profiling:** How does Fabric automatically suggest "Data Cleaning" steps in Dataflow Gen2?
+376. **Experiment Versioning:** What happens to an Experiment in MLflow if the underlying Lakehouse table is "Time Traveled"?
+377. **Text Analytics at Scale:** How do you process 1 million customer reviews using Spark and AI?
+378. **AutoML in Fabric:** What is the "Wizard" experience for training models without writing code?
+379. **Fine-Tuning LLMs:** Can you perform fine-tuning of Llama-3 or GPT-4 within a Fabric Spark Environment?
+380. **Feature Store:** How do you implement a "Feature Store" logic using Lakehouse tables?
+
+---
+
+## **Part 20: Edge Cases & The "Really Advanced" Stuff (381–400)**
+
+381. **OneLake "Ghost Files":** What causes a file to appear in the "Files" folder but not be queryable as a "Table"?
+382. **Warehouse "Deadlocks":** How do you identify and resolve a T-SQL deadlock in a Fabric Warehouse?
+383. **Spark "Speculative Execution":** When should you enable it for long-running ETL jobs?
+384. **Dataflow Gen2 "Looping":** How do you implement a recursive loop in a Dataflow without hitting the 10-minute timeout?
+385. **KQL "Cross-Cluster" Joins:** How do you join data from a Fabric KQL DB with an external Azure Data Explorer cluster?
+386. **Shortcut "Chaining" Performance:** What is the latency penalty of having a Shortcut to a Shortcut to an S3 bucket?
+387. **Delta "Liquid Clustering":** Does Fabric support this next-gen replacement for Z-Ordering?
+388. **SQL "Direct" vs. "Cloud" Connection:** Why does SSMS sometimes behave differently than the Fabric Web Query Editor?
+389. **Large Scale "Vacuum":** What is the risk of running `VACUUM` with `RETAIN 0 HOURS`?
+390. **Power BI "Direct Lake" Fallback:** How do you monitor how many users are hitting DirectQuery instead of Direct Lake?
+391. **Data Activator "Flapping":** How do you prevent an alert from firing 100 times in 1 minute?
+392. **Custom "Fabric Item" types:** Can a 3rd party developer create their own item type in Fabric?
+393. **Workspace "Migration" across Capacities:** What happens to the OneLake URL when you move a workspace to a different F-SKU?
+394. **Spark "Checkpoint" Cleanup:** Who is responsible for deleting old checkpoint files in a streaming job?
+395. **High-Frequency Ingestion (1 sec):** Is a Lakehouse or a KQL Database better for 1-second interval data?
+396. **Multi-Geo Capacity:** Can one Fabric Tenant have capacities in both the US and Europe?
+397. **API Rate Limits:** What is the "Retry-After" header strategy for the Fabric REST API?
+398. **Fabric "Home" Customization:** How do you push a "Company-Wide" dashboard to every user's Fabric home screen?
+399. **The "Fabric Capacity Metrics" App:** How do you interpret "Smoothing" over a 24-hour window vs. a 14-day window?
+400. **The Future:** How does Microsoft's "One Data" vision eliminate the need for traditional "ETL developers"?
+
+---
+
+### **Congratulations!**
+
+If you can answer 70% of these 400 questions, you are likely in the top 1% of Fabric professionals globally.
+
+**One final gift:**  showing how OneLake sits at the center of all these 400 topics.
+
+**Would you like me to take a specific "real-world scenario" (e.g., "Migrating a 100TB Hadoop cluster to Fabric") and walk through the exact architecture and pitfalls?**
