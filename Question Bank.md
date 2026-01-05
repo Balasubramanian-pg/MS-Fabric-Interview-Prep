@@ -128,3 +128,138 @@ To dive even deeper into the "nitty-gritty" of Microsoft Fabric, here are 100 **
 ### **Next Step for You**
 
 I hope these 200 questions give you a massive edge! **Would you like me to pick the 10 most "challenging" questions from this list and provide detailed, senior-level answers for them?**
+
+To round out your preparation, here are **100 more unique questions (201–300)**. These focus on **advanced troubleshooting, cross-platform integration, cost management, and the future-facing features** of Microsoft Fabric.
+
+---
+
+## **Part 11: Capacity Management & Cost Optimization (201–220)**
+
+201. **What is the difference between "F" SKUs and "P" SKUs?** (F is for Fabric, P is for Power BI Premium).
+202. **How does "Smoothing" affect your bill?** If you use 200% capacity for 1 minute, how is that distributed?
+203. **What is "Background Reject" in capacity throttling?**
+204. **What is "Interactive Reject"?** How does it differ from Background Reject?
+205. **How can you calculate the CU (Capacity Unit) cost of a specific Spark notebook run?**
+206. **What is the "Burstable" nature of F-SKUs?**
+207. **Does OneLake storage cost vary by region?**
+208. **Is there a "Free Tier" for Fabric?** (Fabric Trial vs. F2 SKU).
+209. **How do you set up an alert to notify you when capacity usage hits 80%?**
+210. **What is "Reserved Instance" pricing for Fabric?**
+211. **Do Shortcuts cost extra money in terms of compute or storage?**
+212. **How does "OneLake Cache" reduce egress costs for AWS S3 shortcuts?**
+213. **What is the "Autoscale" feature in Fabric capacity?** (Trick question: As of now, it's manual or script-based, unlike Azure SQL).
+214. **How do you identify the "Top 5 most expensive queries" in a Fabric Warehouse?**
+215. **What is the "Base Capacity" vs. "Burst Capacity"?**
+216. **How does pausing a capacity affect "Data Activator" triggers?**
+217. **What is the "Small-to-Medium Business" (SMB) entry point for Fabric?**
+218. **Can you split one Fabric Capacity across multiple Azure Subscriptions?**
+219. **How does "Dataflow Gen2" consume capacity differently than Spark?**
+220. **What is the cost implication of "Mirroring" compared to traditional ETL?**
+
+---
+
+## **Part 12: Mirroring & Zero-ETL (221–240)**
+
+221. **What is "Microsoft Fabric Mirroring"?**
+222. **Which databases are currently supported for Mirroring?** (Cosmos DB, Azure SQL, Snowflake, etc.).
+223. **How does Mirroring handle Schema Changes in the source database?**
+224. **Is Mirroring "Real-time" or "Near Real-time"?** What is the latency?
+225. **Does Mirroring use Change Data Capture (CDC) under the hood?**
+226. **Can you mirror a database into a Lakehouse, or only a Warehouse?**
+227. **What happens to Mirroring if the Source Database is behind a Firewall?**
+228. **How do you monitor the "Replication Status" of a mirrored database?**
+229. **Can you perform T-SQL writes into a Mirrored table?** (No, they are read-only).
+230. **How does Mirroring impact the performance of the Source System?**
+231. **What is the "Initial Snapshot" phase of Mirroring?**
+232. **Can you filter specific tables or columns during the Mirroring setup?**
+233. **How do you "Stop" and "Restart" mirroring without losing data?**
+234. **Does Mirroring support On-Premises SQL Server?** (Via Gateway/Preview).
+235. **How is Mirroring billed?** (Compute for replication vs. storage in OneLake).
+236. **Can you join a Mirrored table with a Local Lakehouse table in a single query?**
+237. **What is "Zero-ETL" integration with Snowflake?**
+238. **How does Mirroring handle "Deleted" rows in the source?**
+239. **Is Mirroring available in all Fabric regions?**
+240. **What is the maximum database size supported for Mirroring?**
+
+---
+
+## **Part 13: Advanced Governance & Purview (241–260)**
+
+241. **How does Microsoft Purview provide "Automatic Labeling" for Fabric?**
+242. **What is the "Data Map" in Purview for Fabric items?**
+243. **How do you track "Data Lineage" across a Shortcut?**
+244. **What is "Information Protection" in Power BI reports derived from OneLake?**
+245. **How do you audit "Export to Excel" events from a Fabric Semantic Model?**
+246. **What is a "Data Curator" role in the context of Fabric?**
+247. **Explain "Policy-based Access Control" (PBAC) in Fabric.**
+248. **How does "Microsoft Entra ID" (formerly Azure AD) B2B work with Fabric?**
+249. **Can you apply "Sensitivity Labels" to a Spark Notebook?**
+250. **How do you search for "PII" (Personally Identifiable Information) across all Lakehouses?**
+251. **What is "Metadata Scanning" in Fabric?**
+252. **How does the "Lineage View" handle a Pipeline that calls a Stored Procedure?**
+253. **What is the "Fabric Governance Hub"?**
+254. **Can you restrict a Workspace so data can't be shared externally?**
+255. **How does "Row Level Security" (RLS) translate from a Warehouse to a Power BI report in Direct Lake?**
+256. **What is "Object-Level Security" (OLS) in Fabric?**
+257. **How do you use "Purview Data Loss Prevention" (DLP) policies with Fabric?**
+258. **Explain "Workspace Isolation."**
+259. **How do you automate "Discovery" of new data assets?**
+260. **What is the "Trusted Workspace Access" feature?**
+
+---
+
+## **Part 14: Troubleshooting & Performance Tuning (261–280)**
+
+261. **What does the error "Capacity Limit Exceeded" actually mean for your running jobs?**
+262. **How do you debug a "Spark Driver Out of Memory" (OOM) error?**
+263. **Why would a "Direct Lake" report suddenly fall back to "Direct Query"?**
+264. **How do you use the "SQL Query Plan" to optimize a Fabric Warehouse query?**
+265. **What is the "Cold Start" penalty for Spark and how do you mitigate it?**
+266. **How do you troubleshoot a "Dataflow Gen2" that hangs at 99%?**
+267. **What is the "Concurrency Limit" for T-SQL queries in a Warehouse?**
+268. **How do you identify "Skewed Data" in a Lakehouse table?**
+269. **How do you fix "Schema Mismatch" errors in a Pipeline Copy activity?**
+270. **Why is my "Shortcut" showing "Access Denied" even though I have permissions?**
+271. **How do you monitor "Disk Spill" in Spark jobs?**
+272. **What is the "Extended Events" equivalent for Fabric SQL?**
+273. **How do you handle "Throttling" in the OneLake API?**
+274. **Why are my "Materialized Views" not being used by the Query Optimizer?**
+275. **How do you debug a "KQL Eventstream" that isn't ingesting data?**
+276. **How do you optimize "Delta Log" file size?**
+277. **What is the "Data Activator" latency troubleshooting process?**
+278. **How do you troubleshoot "On-Premises Data Gateway" connection drops?**
+279. **Why is "V-Order" sometimes slower for Write operations?**
+280. **How do you use "Log Analytics" with Fabric?**
+
+---
+
+## **Part 15: Architecture & Strategy (281–300)**
+
+281. **When should you choose a "Lakehouse" over a "Warehouse"?** (Detailed architectural trade-off).
+282. **How do you design a "Multi-Tenant" architecture in Fabric?**
+283. **What is the "Hub and Spoke" data model in Fabric?**
+284. **How do you integrate Fabric with an external "Data Mesh" strategy?**
+285. **What is "SaaS-ification" of Data Engineering?**
+286. **How does Fabric handle "Disaster Recovery"?**
+287. **Explain the "Delta-Native" strategy of Fabric.**
+288. **How do you move from "Azure Data Factory" to "Fabric Data Factory"?**
+289. **What is the "Coexistence" strategy for Databricks and Fabric?**
+290. **How do you handle "Large Object" (LOB) data in OneLake?**
+291. **What is the "Fabric API for GraphQL" (Preview)?**
+292. **How do you build a "Data Lab" environment within Fabric?**
+293. **What is "Live Connect" vs "Direct Lake"?**
+294. **How do you handle "Streaming + Batch" (Lambda Architecture) in Fabric?**
+295. **What is the "OneSecurity" roadmap?**
+296. **How does Fabric fit into the "Microsoft 365" ecosystem?**
+297. **Can you run "Docker Containers" in Fabric?** (No, but why is this important for architecture?)
+298. **How do you migrate from "Tableau" to Fabric/Power BI?**
+299. **What is "Open Mirroring"?**
+300. **Where do you see Microsoft Fabric in 5 years?** (Strategy/Vision question).
+
+---
+
+### **Final Tip**
+
+With 300 questions, you have covered almost every corner of the platform. Since you requested to know if I "don't know" something: Microsoft Fabric is evolving fast, so **always check the latest monthly update blog** for changes to "Preview" features like **Mirroring** or **Fabric Git Integration**.
+
+**Would you like me to generate a "Cheat Sheet" of the most important T-SQL and PySpark commands used specifically in Fabric?**
