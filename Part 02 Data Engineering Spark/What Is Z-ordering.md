@@ -2,8 +2,6 @@ In Microsoft Fabric, **Z-Ordering** is a data clustering technique used to organ
 
 While Fabric also uses a proprietary optimization called **V-Order** (which focuses on compression and general read speed), Z-Ordering is a standard Delta Lake feature that works alongside it to improve "data skipping."
 
----
-
 ### How Z-Ordering Works
 
 Standard sorting usually only works well for one column. If you sort by "Date," your "Customer ID" values will be scattered everywhere. Z-Ordering uses a mathematical curve (the Z-order curve) to map multi-dimensional data into a one-dimensional order.
@@ -42,8 +40,6 @@ deltaTable = DeltaTable.forName(spark, "Employees_Table")
 deltaTable.optimize().executeZOrderBy("Employee_ID")
 
 ```
-
----
 
 ### Key Differences: Z-Order vs. V-Order
 
