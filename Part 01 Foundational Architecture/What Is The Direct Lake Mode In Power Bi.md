@@ -4,8 +4,6 @@
 
 It essentially allows Power BI to "read" data directly from **Delta Lake** files in OneLake without needing to import them into a separate proprietary cache or translate them into SQL queries.
 
----
-
 ### How It Works: The "Transcoding" Magic
 
 In traditional Power BI, you usually choose between two extremes:
@@ -21,8 +19,6 @@ In traditional Power BI, you usually choose between two extremes:
 * **Massive Scale:** Because it only loads the specific columns needed for a visual into memory, it can handle multi-billion row datasets that would otherwise crash an Import model.
 * **Near-Instant "Refresh":** Instead of a long ETL process, a "refresh" in Direct Lake is just a **"framing"** operation—it simply updates the metadata to point to the latest version of the files in the lake, which takes seconds.
 * **No SQL Overhead:** Unlike DirectQuery, there is no "SQL translation" layer. The engine reads the files natively, resulting in performance that rivals Import mode.
-
----
 
 ### Comparison at a Glance
 
@@ -42,8 +38,6 @@ In traditional Power BI, you usually choose between two extremes:
 ### When should you use it?
 
 You should use Direct Lake when you are working with **very large datasets** (Gold layer of a Medallion architecture) in Fabric and need **high performance** without the hassle of managing refresh schedules or the latency of DirectQuery.
-
----
 
 [Microsoft Fabric: Direct Lake Mode in Power BI](https://www.youtube.com/watch?v=d61ndvqefzs)
 
