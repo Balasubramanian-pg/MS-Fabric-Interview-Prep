@@ -4,8 +4,6 @@
 
 Before this, you often had to set up Row-Level Security (RLS) separately for SQL, again for Power BI, and again for Spark. With Universal Security, the "source of truth" for security sits directly in OneLake.
 
----
-
 ### How It Works: "Define Once, Enforce Everywhere"
 
 The core philosophy is that security should be tied to the **data**, not the **tool** used to access it. When you configure a security role in a Lakehouse or Warehouse, those rules are natively respected by:
@@ -21,8 +19,6 @@ The core philosophy is that security should be tied to the **data**, not the **t
 * **Column-Level Security (CLS):** You can hide sensitive columns (like Social Security numbers or personal phone numbers) from specific users.
 * **Automatic Enforcement in Spark:** Traditionally, Spark has been difficult to secure at a granular level. Fabric uses a "secure gateway" to ensure Spark jobs only "see" the data the user is authorized to access.
 * **No Data Duplication:** Since the security is applied at the OneLake level, you don't need to create filtered "views" or duplicate data into different tables for different user groups.
-
----
 
 ### Comparison: Old Model vs. Universal Security
 
