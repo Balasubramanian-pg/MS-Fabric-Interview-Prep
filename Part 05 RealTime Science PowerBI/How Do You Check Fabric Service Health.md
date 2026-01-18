@@ -3,7 +3,7 @@
 Canonical documentation for [How Do You Check Fabric Service Health](Part 05 RealTime Science PowerBI/How Do You Check Fabric Service Health.md). This document defines concepts, terminology, and standard usage.
 
 ## Purpose
-The purpose of checking fabric service health is to ensure the operational integrity, availability, and performance of a distributed system. In a fabric architecture—where multiple interconnected nodes or services function as a single logical entity—health monitoring provides the necessary telemetry to facilitate automated self-healing, load balancing, and informed manual intervention. This process addresses the problem of "silent failures" and partial degradations that are inherent in complex, distributed environments.
+The purpose of checking fabric service health is to maintain the operational integrity, availability, and reliability of a distributed system. In a fabric architecture—where numerous interconnected services, nodes, and partitions function as a single entity—health monitoring provides the necessary visibility to detect failures, trigger automated self-healing mechanisms, and inform orchestration decisions. This process addresses the problem of "silent failures" in complex systems by providing a standardized way to communicate the functional status of individual components to a centralized management layer.
 
 > [!NOTE]
 > This documentation is intended to be implementation-agnostic and authoritative.
@@ -12,96 +12,97 @@ The purpose of checking fabric service health is to ensure the operational integ
 Clarify what is in scope and out of scope for this topic.
 
 **In scope:**
-* Methodologies for determining the operational state of distributed nodes.
-* Hierarchical health modeling (from individual components to the aggregate fabric).
-* Theoretical frameworks for health signal propagation and evaluation.
-* Distinctions between liveness, readiness, and performance health.
+* **Health Modeling:** The logical structure of health states and reporting.
+* **Aggregation Logic:** How individual component statuses contribute to the global health of the fabric.
+* **Reporting Mechanisms:** The theoretical methods by which health data is transmitted and stored.
+* **Evaluation Policies:** The rules governing how health data is interpreted.
 
 **Out of scope:**
-* Specific vendor implementations (e.g., Azure Service Fabric, Kubernetes Probes, AWS App Mesh).
-* Specific programming language syntax for health check endpoints.
-* Hardware-level diagnostic procedures (e.g., BIOS/Firmware checks).
+* **Specific vendor implementations:** (e.g., specific CLI commands for Azure Service Fabric, Kubernetes, or VMware Tanzu).
+* **Hardware-level diagnostics:** (e.g., specific BIOS or firmware error codes).
+* **Network protocol specifics:** (e.g., the exact packet structure of a heartbeat).
 
 ## Definitions
 Provide precise definitions for key terms.
 
 | Term | Definition |
 |------|------------|
-| **Fabric** | A distributed topology of interconnected nodes and services that act as a unified computing resource. |
-| **Health State** | A discrete classification (e.g., Healthy, Warning, Error) representing the current condition of a service relative to its expected baseline. |
-| **Liveness** | A binary indicator of whether a service process is running and responsive. |
-| **Readiness** | A state indicating whether a service is prepared to accept and process incoming traffic or tasks. |
-| **Heartbeat** | A periodic signal emitted by a service to indicate it is still active. |
-| **Propagation** | The process by which the health status of a child component influences the health status of its parent or the aggregate fabric. |
-| **Telemetry** | The collection and transmission of data points (metrics, logs, traces) used to derive health. |
+| **Fabric** | A distributed computing topology consisting of interconnected nodes and services managed as a single pool of resources. |
+| **Health State** | A discrete value representing the operational condition of an entity (typically OK, Warning, or Error). |
+| **Entity** | Any identifiable component within the fabric that can report health (e.g., a node, application, service, or partition). |
+| **Health Store** | A centralized or distributed repository that collects and aggregates health reports from across the fabric. |
+| **Watchdog** | An external process or service that monitors other entities and submits health reports on their behalf. |
+| **Liveness** | A measure of whether a process is running and responsive. |
+| **Readiness** | A measure of whether a service is prepared to accept and process traffic. |
+| **TTL (Time to Live)** | The duration for which a health report is considered valid before it expires. |
 
 ## Core Concepts
 
-### 1. Multi-Dimensional Health
-Health is not a binary state. A service may be "running" (Liveness) but unable to "work" (Readiness). Checking health requires evaluating multiple dimensions:
-*   **Process Health:** Is the execution unit active?
-*   **Resource Health:** Does the service have sufficient CPU, memory, and disk?
-*   **Dependency Health:** Are the upstream/downstream services available?
-*   **Functional Health:** Is the service producing correct outputs within defined latency thresholds?
+### Hierarchical Health Modeling
+Fabric health is inherently hierarchical. A fabric is composed of applications, which are composed of services, which are composed of partitions and replicas, all running on physical or virtual nodes. The health of a parent entity is a function of the health of its children, governed by specific aggregation policies.
 
-### 2. Hierarchical Aggregation
-In a fabric, health is often hierarchical. The health of a "Cluster" is an aggregation of the health of its "Nodes," which in turn is an aggregation of the "Services" running on them. 
-*   **Roll-up Logic:** Rules that define how a single failure at a low level affects the high-level status (e.g., "If 20% of nodes are in Error state, the Fabric is in Warning state").
+### State-Based Reporting
+Unlike traditional logging, which records events, health checking is state-based. A health report represents a "snapshot" of a component's condition at a specific point in time. These reports are persisted in a Health Store to provide a continuous view of the system's status.
 
-### 3. Deterministic vs. Probabilistic Health
-*   **Deterministic:** Based on explicit checks (e.g., a ping or a specific API response).
-*   **Probabilistic:** Based on statistical observation (e.g., "The error rate has increased by 5% over the last 10 minutes, suggesting a health decline").
+### Asynchronous Evaluation
+Health checking in a fabric is typically asynchronous. Components report their status independently, and the fabric's management layer evaluates these reports periodically or upon request to determine the "effective health" of the system.
 
 ## Standard Model
 
-The standard model for checking fabric health follows a **Collect-Evaluate-Propagate** cycle:
+The standard model for checking fabric service health follows a **Report-Store-Evaluate** workflow:
 
-1.  **Collection (Signal Acquisition):**
-    *   **Pull Model:** A central monitor queries the service at a specific endpoint (e.g., `/health`).
-    *   **Push Model:** The service sends heartbeats or metrics to a central collector.
-2.  **Evaluation (State Determination):**
-    *   The raw data is compared against predefined thresholds (SLA/SLO).
-    *   The state is categorized: **Healthy** (Optimal), **Warning** (Degraded/At Risk), or **Error** (Critical/Non-functional).
-3.  **Propagation (Impact Analysis):**
-    *   The state is reported to the fabric controller.
-    *   The controller triggers actions: rerouting traffic, restarting instances, or alerting operators.
+1.  **Reporting:** Entities (or Watchdogs) generate health reports. A report must contain:
+    *   **Source ID:** Who is reporting.
+    *   **Entity ID:** What is being reported on.
+    *   **Property:** The specific aspect being monitored (e.g., "DiskSpace", "CPU", "Connectivity").
+    *   **Health State:** The status (OK, Warning, Error).
+    *   **TTL:** How long the report remains valid.
+2.  **Storage:** The Health Store receives reports. It overwrites old reports for the same Entity/Property combination with new data. If a report's TTL expires, the store may transition the entity to an "Unknown" or "Error" state depending on policy.
+3.  **Aggregation:** The fabric controller applies aggregation rules. For example, if 20% of service replicas are in an "Error" state, the parent service may be marked as "Warning." If 51% are in "Error," the service may be marked as "Error."
+4.  **Querying:** Administrators or automated systems query the Health Store to retrieve the current state of an entity or the entire fabric.
 
 ## Common Patterns
 
-### Sidecar Pattern
-A secondary process (sidecar) runs alongside the service to monitor its health and report to the fabric, offloading the monitoring logic from the business logic.
+### The Watchdog Pattern
+An external agent (the Watchdog) monitors a service from the outside (e.g., by performing HTTP probes). This is used when the service itself cannot report health or to verify that the service is reachable over the network.
 
-### Synthetic Transactions
-The health checker performs a "dummy" operation that mimics a real user action (e.g., placing a test order) to verify end-to-end functional health.
+### Sidecar Reporting
+A secondary process (sidecar) runs alongside the main service. The sidecar handles the logic of gathering metrics and reporting them to the Health Store, offloading this responsibility from the primary application logic.
 
-### Adaptive Health Checking
-The frequency of health checks increases when a service shows signs of instability and decreases when the service is proven stable, reducing monitoring overhead.
-
-### Quorum-Based Health
-In distributed systems, health is determined by a majority vote among nodes to prevent "split-brain" scenarios where a single node incorrectly reports itself as the only healthy member.
+### Differential Reporting
+To reduce network traffic, entities only send health reports when their state changes or at a low-frequency "heartbeat" interval to maintain TTL.
 
 ## Anti-Patterns
 
-*   **Shallow Health Checks:** Only checking if a port is open without verifying if the application logic behind the port is functioning.
-*   **Circular Dependencies:** A health check that depends on a service which, in turn, depends on the service being checked.
-*   **Flapping State:** Thresholds that are too sensitive, causing a service to rapidly oscillate between "Healthy" and "Error" states, leading to unnecessary restarts or traffic shifts.
-*   **Hard-Coded Thresholds:** Using static values for health (e.g., "Memory > 80%") without accounting for varying workloads or service types.
+### Binary Health Logic
+Treating health as only "Up" or "Down." This ignores the "Warning" state, which is critical for proactive maintenance and identifying "grey failures" (where a system is running but performing poorly).
+
+### Circular Dependencies
+A health checking mechanism that depends on the very service it is monitoring to report its status. If the service fails, the health check fails to report the failure.
+
+### Excessive Reporting Frequency
+Sending health reports too frequently (e.g., every millisecond) can overwhelm the Health Store and consume significant fabric bandwidth, leading to a "self-inflicted" Denial of Service (DoS).
+
+### Ignoring TTL
+Failing to set or respect Time to Live values. Without TTL, a "Healthy" report from a crashed component might persist indefinitely in the Health Store, providing a false sense of security.
 
 ## Edge Cases
 
-*   **Zombie Processes:** A process that is technically "alive" (responding to pings) but is deadlocked and cannot perform any work.
-*   **Gray Failure:** A subtle degradation where the service is not "down" but is performing so poorly (e.g., extreme latency) that it is effectively useless.
-*   **Network Partitioning:** When a service is healthy but the health checker cannot reach it due to a network failure. The fabric must distinguish between "Service Down" and "Network Down."
-*   **Startup/Shutdown Transitions:** Services often report "Error" or "Unready" during initialization or graceful shutdown; these must be handled as expected lifecycle states rather than failures.
+### Network Partitions (Split-Brain)
+In a network partition, the Health Store may receive conflicting reports or no reports at all from a segment of the fabric. The system must decide whether to assume the missing entities are dead (Error) or simply unreachable (Unknown).
+
+### Flapping States
+An entity that rapidly oscillates between "OK" and "Error." Standard models often implement "hysteresis" or "dampening," where a state change is only accepted after it remains stable for a defined period.
+
+### Zombie Replicas
+A replica that has been decommissioned by the fabric controller but continues to send "Healthy" reports. The Health Store must be able to correlate health reports with the current intended state of the fabric.
 
 ## Related Topics
-*   **Service Level Indicators (SLIs):** The specific metrics used to measure health.
-*   **Circuit Breaker Pattern:** A design pattern used to stop traffic to an unhealthy service.
-*   **Self-Healing Orchestration:** The automated response to a negative health check.
-*   **Observability vs. Monitoring:** The broader context of understanding system state.
+* **Distributed Consensus Algorithms:** Used to ensure the Health Store remains consistent across nodes.
+* **Orchestration and Scheduling:** How the fabric uses health data to move or restart services.
+* **Observability and Telemetry:** The broader field of monitoring that includes logs, metrics, and traces.
 
 ## Change Log
-
 | Version | Date | Description |
 |---------|------|-------------|
 | 1.0 | 2026-01-18 | Initial AI-generated canonical documentation |
