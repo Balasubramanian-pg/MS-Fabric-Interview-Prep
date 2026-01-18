@@ -3,24 +3,24 @@
 Canonical documentation for [Can You Use Dax In Fabric](Part 05 RealTime Science PowerBI/Can You Use Dax In Fabric.md). This document defines concepts, terminology, and standard usage.
 
 ## Purpose
-The integration of Data Analysis Expressions (DAX) within a unified data platform addresses the requirement for high-performance, multi-dimensional analytical modeling. This topic exists to define the role of DAX as the primary calculation engine for semantic layers within a distributed data architecture. It establishes how a functional expression language interacts with modern storage formats (such as Parquet/Delta) and unified compute engines.
+The purpose of this topic is to define the role, availability, and architectural positioning of Data Analysis Expressions (DAX) within a unified data analytics ecosystem. DAX serves as the functional expression language designed for data modeling, analytical calculations, and business logic definition. In a modern data fabric, DAX bridges the gap between raw data storage and end-user consumption by providing a high-performance semantic layer.
 
 > [!NOTE]
-> This documentation is intended to be implementation-agnostic and authoritative regarding the architectural placement of DAX within the Fabric ecosystem.
+> This documentation is intended to be implementation-agnostic and authoritative regarding the integration of DAX within the Fabric architecture.
 
 ## Scope
 Clarify what is in scope and out of scope for this topic.
 
 **In scope:**
-* The role of DAX in defining business logic and metrics.
-* Interaction between DAX and the unified storage layer (OneLake).
-* The conceptual boundaries between DAX and other query languages (SQL, KQL).
-* Theoretical application of DAX in Direct Lake, Import, and DirectQuery modes.
+* The functional role of DAX within semantic models.
+* The relationship between DAX and various storage modes (Import, DirectQuery, DirectLake).
+* The theoretical boundaries of DAX as a calculation engine versus an ETL tool.
+* Integration points between the semantic layer and the data lake.
 
 **Out of scope:**
-* Step-by-step tutorials for writing specific DAX formulas.
-* Comparison of DAX vs. Python for machine learning.
-* Specific licensing or pricing tiers for Fabric capacity.
+* Specific DAX function syntax or coding tutorials.
+* Comparison with non-analytical languages (e.g., Python, Scala) for data engineering.
+* Step-by-step UI instructions for specific software versions.
 
 ## Definitions
 Provide precise definitions for key terms.
@@ -28,47 +28,75 @@ Provide precise definitions for key terms.
 | Term | Definition |
 |------|------------|
 | DAX (Data Analysis Expressions) | A library of functions and operators that can be combined to build formulas and expressions for data modeling. |
-| Semantic Model | A logical layer that abstracts underlying data sources, providing a business-friendly view of data through tables, relationships, and DAX measures. |
-| Direct Lake | A storage mode that allows the analytical engine to read Delta tables directly from a data lake without importing or duplicating data. |
+| Semantic Model | A logical layer that sits between data sources and reporting tools, containing relationships, hierarchies, and DAX measures. |
+| DirectLake | A storage mode that allows the DAX engine to load Parquet-formatted files directly from a data lake without translation to SQL or importing into a proprietary cache. |
 | Evaluation Context | The environment in which a DAX formula is operated, consisting of Filter Context and Row Context. |
-| OneLake | The unified, multi-cloud data lake that serves as the single source of truth for all data within the platform. |
+| Measure | A DAX calculation that is evaluated at query time based on the current user-defined filters. |
+| Calculated Column | A DAX expression that is computed during data processing and stored within the model's table structure. |
 
 ## Core Concepts
-The use of DAX in a unified platform is centered on three fundamental pillars:
 
-1.  **The Analytical Engine:** DAX is the native language of the Tabular engine. In the context of a modern data fabric, this engine acts as the compute layer for high-speed aggregations and complex business logic.
-2.  **Logic Centralization:** DAX allows for "write once, use everywhere" logic. By defining a measure in a semantic model, the calculation remains consistent regardless of which reporting tool or interface consumes it.
-3.  **Direct Access to Open Formats:** Unlike traditional implementations where DAX required proprietary data formats, the modern architecture allows DAX to query open-source Delta tables directly, bridging the gap between data engineering and business intelligence.
+### The Semantic Layer
+In the Fabric architecture, DAX is the primary language for the semantic layer. While data may reside in a Lakehouse or Warehouse in Delta/Parquet format, DAX provides the business logic (e.g., Year-over-Year growth, Moving Averages) that transforms raw numbers into actionable insights.
+
+### Engine Interaction
+DAX operates within an in-memory analytical engine. In a unified fabric, this engine interacts with the storage layer in three primary ways:
+1.  **Memory-Resident:** Data is compressed and loaded into memory for maximum DAX performance.
+2.  **Direct Translation:** DAX queries are translated into native queries (like SQL) for the underlying data source.
+3.  **Direct Metadata Access:** The engine reads industry-standard file formats (Delta/Parquet) directly, bypassing the need for a translation layer while maintaining in-memory performance.
+
+### Functional vs. Procedural
+DAX is a functional language. Unlike SQL (declarative) or Python (procedural), DAX is built on nested functions where the flow of data is determined by the evaluation context.
 
 ## Standard Model
-The standard model for utilizing DAX within a unified fabric involves the following hierarchy:
 
-*   **Storage Layer:** Data resides in OneLake as Delta/Parquet files.
-*   **Abstraction Layer:** A Lakehouse or Warehouse provides a SQL endpoint, but the **Semantic Model** is the primary host for DAX.
-*   **Execution:** When a user interacts with a report, the analytical engine generates a DAX query. This query is resolved by either accessing the data in-memory (Import), querying the Delta files directly (Direct Lake), or passing a translated query to the source (DirectQuery).
+The standard model for utilizing DAX within a data fabric is the **Star Schema**. 
+*   **Fact Tables:** Contain the quantitative data (observations/events).
+*   **Dimension Tables:** Contain the descriptive attributes (filters/groupings).
+
+DAX is optimized for this structure. Using DAX on a single "flat" table or a complex "snowflake" schema often leads to performance degradation and increased complexity in formula logic.
 
 ## Common Patterns
-*   **Measure-Based Modeling:** Defining all business logic as measures rather than calculated columns to ensure maximum flexibility and performance.
-*   **DAX Query View:** Utilizing DAX as a query language (rather than just a calculation language) to inspect data and validate logic directly against the semantic model.
-*   **Direct Lake Integration:** Leveraging the ability of DAX to perform at "Import-like" speeds by reading directly from the lakehouse without the latency of data refresh cycles.
+
+### Time Intelligence
+The most frequent application of DAX is for time-based calculations. This involves using a dedicated Date table to calculate metrics across different temporal granularities (MTD, QTD, YTD).
+
+### Dynamic Aggregations
+DAX is used to create measures that change their behavior based on the user's selection. This includes "Switch" patterns where a single visual can display different metrics (e.g., Revenue vs. Volume) based on a slicer.
+
+### Row-Level Security (RLS)
+DAX is the standard mechanism for defining security filters. By applying DAX expressions to tables, the system can restrict data visibility based on the identity of the user accessing the report.
 
 ## Anti-Patterns
-*   **DAX for ETL:** Using DAX (specifically calculated columns) to perform heavy data transformation or cleansing. These operations should be pushed "upstream" to the Data Engineering layer (Spark or SQL).
-*   **Over-Complexity in Row Context:** Creating deeply nested iterators (e.g., `FILTER` inside `SUMX`) that can lead to performance degradation on large-scale datasets.
-*   **Bypassing the Semantic Layer:** Attempting to replicate complex DAX logic in SQL views for reporting purposes, which leads to "logic drift" and maintenance overhead.
+
+### DAX as an ETL Tool
+Using DAX (specifically Calculated Columns) to perform heavy data transformation or cleansing is discouraged. These operations should be "pushed upstream" to the data engineering layer (SQL or Spark) to ensure the semantic model remains lean and performant.
+
+### Over-Complexity in Measures
+Creating "God Measures"—single DAX expressions that attempt to handle dozens of disparate logic branches—leads to unmaintainable code. The standard approach is to use "Measure Branching," where complex logic is built upon simpler, atomic measures.
+
+### Ignoring Filter Context
+A common mistake is writing DAX that assumes a specific sort order or row position without explicitly defining the filter context, leading to unpredictable results when users interact with reports.
 
 ## Edge Cases
-*   **Large-Scale Direct Lake Fallback:** When a semantic model exceeds the memory limits of its assigned capacity, the engine may "fall back" from Direct Lake to DirectQuery mode. This changes the execution from DAX-native to SQL-translated, which may impact performance and supported DAX functions.
-*   **Cross-Workspace Dependencies:** Using DAX to query a semantic model that resides in a different workspace or region, introducing potential latency and security permission complexities.
-*   **DAX on Non-Relational Data:** While DAX is optimized for star schemas, it can be applied to flat files or document-style data, though this often requires significant modeling overhead to maintain performance.
+
+### DirectLake Fallback
+In scenarios where the data volume exceeds memory limits or specific security features are used, the DAX engine may "fallback" from DirectLake mode to DirectQuery mode. This transition is transparent to the user but can significantly impact query performance.
+
+### DAX in Paginated Reports
+While DAX is primarily associated with interactive visuals, it can be used as a query language to retrieve flattened datasets for paginated, print-ready reports. In this case, DAX functions as a data retrieval language rather than just a calculation engine.
+
+### Large String Manipulation
+DAX is highly optimized for numeric aggregation but performs poorly with heavy string manipulation or "text mining" at scale. Such tasks are better suited for the data science or engineering layers of the fabric.
 
 ## Related Topics
-*   **Direct Lake Storage Mode:** The technical mechanism for DAX-to-Delta communication.
-*   **Tabular Object Model (TOM):** The API used to manage the structures that DAX operates upon.
-*   **Power BI Semantic Models:** The primary implementation vehicle for DAX.
-*   **OneLake Integration:** The underlying storage architecture.
+*   **Star Schema Modeling:** The foundational data structure for DAX.
+*   **VertiPaq Engine:** The underlying technology that executes DAX queries.
+*   **Delta Lake Storage:** The physical storage format that enables DirectLake connectivity.
+*   **Power BI Semantic Models:** The primary container for DAX logic.
 
 ## Change Log
+
 | Version | Date | Description |
 |---------|------|-------------|
 | 1.0 | 2026-01-18 | Initial AI-generated canonical documentation |
