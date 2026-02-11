@@ -50,7 +50,6 @@ To help you ace your Microsoft Fabric interview, I have organized 100 questions 
 39. **Can you read a CSV file into a Lakehouse?** Yes, and it is usually converted to Delta for performance.
 40. **How do you secure a Lakehouse?** Using Workspace roles and OneLake Data Access Roles (preview).
 
----
 
 ## **Part 3: Data Factory & Pipelines (41–60)**
 
@@ -75,7 +74,6 @@ To help you ace your Microsoft Fabric interview, I have organized 100 questions 
 59. **Can you run SSIS packages in Fabric?** Not directly; they must be migrated or run in Azure-SSIS IR (via ADF).
 60. **What is "Data Activator"?** A no-code tool to set up alerts based on data changes (e.g., "Email me if sales drop").
 
----
 
 ## **Part 4: Data Warehouse & SQL (61–80)**
 
@@ -100,7 +98,6 @@ To help you ace your Microsoft Fabric interview, I have organized 100 questions 
 79. **Can you use SQL Server Management Studio (SSMS) with Fabric?** Yes, using the SQL connection string.
 80. **What is "V-Order" in the context of the Warehouse?** It is applied automatically to all tables in the Warehouse.
 
----
 
 ## **Part 5: Real-Time, Science & Power BI (81–100)**
 
@@ -125,7 +122,6 @@ To help you ace your Microsoft Fabric interview, I have organized 100 questions 
 99. **How do you optimize Power BI report performance?** Reduce visual count, use Star Schema, and leverage Direct Lake.
 100. **Why would a company choose Fabric over Snowflake?** Integration with the Microsoft ecosystem (Office 365, Teams), unified SaaS experience, and Direct Lake performance.
 
----
 
 [Microsoft Fabric for Data Engineers](https://www.youtube.com/watch?v=k5Xpp2v8DT8)
 This video provides a practical breakdown of data engineering pipelines and common interview scenarios for the Microsoft Fabric platform.
@@ -155,7 +151,6 @@ This video provides a practical breakdown of data engineering pipelines and comm
 119. **What is the "Global Search" feature in Fabric?**
 120. **How does OneLake support "Concurrent Writes" from multiple Spark engines?**
 
----
 
 ## **Part 7: Advanced Data Engineering (Spark & Environments) (121–140)**
 
@@ -180,7 +175,6 @@ This video provides a practical breakdown of data engineering pipelines and comm
 139. **How do you use "DisplayHTML" to create custom visualizations in Spark?**
 140. **What is the difference between `spark.saveAsTable` and `df.write.save`?**
 
----
 
 ## **Part 8: Dataflow Gen2 & Advanced Integration (141–160)**
 
@@ -205,7 +199,6 @@ This video provides a practical breakdown of data engineering pipelines and comm
 159. **Can you import a Power BI Dataflow (.json) into Fabric Dataflow Gen2?**
 160. **What is the "Refresh History" limit for Dataflows?**
 
----
 
 ## **Part 9: Real-Time Intelligence & Data Activator (161–180)**
 
@@ -230,7 +223,6 @@ This video provides a practical breakdown of data engineering pipelines and comm
 179. **How do you join a Streaming source with a Static table in Eventstream?**
 180. **What is "Sampling" in KQL and why use it?**
 
----
 
 ## **Part 10: Admin, Governance & Security (181–200)**
 
@@ -261,7 +253,6 @@ I hope these 200 questions give you a massive edge! **Would you like me to pick 
 
 To round out your preparation, here are **100 more unique questions (201–300)**. These focus on **advanced troubleshooting, cross-platform integration, cost management, and the future-facing features** of Microsoft Fabric.
 
----
 
 ## **Part 11: Capacity Management & Cost Optimization (201–220)**
 
@@ -286,7 +277,6 @@ To round out your preparation, here are **100 more unique questions (201–300)*
 219. **How does "Dataflow Gen2" consume capacity differently than Spark?**
 220. **What is the cost implication of "Mirroring" compared to traditional ETL?**
 
----
 
 ## **Part 12: Mirroring & Zero-ETL (221–240)**
 
@@ -311,7 +301,6 @@ To round out your preparation, here are **100 more unique questions (201–300)*
 239. **Is Mirroring available in all Fabric regions?**
 240. **What is the maximum database size supported for Mirroring?**
 
----
 
 ## **Part 13: Advanced Governance & Purview (241–260)**
 
@@ -336,7 +325,6 @@ To round out your preparation, here are **100 more unique questions (201–300)*
 259. **How do you automate "Discovery" of new data assets?**
 260. **What is the "Trusted Workspace Access" feature?**
 
----
 
 ## **Part 14: Troubleshooting & Performance Tuning (261–280)**
 
@@ -361,7 +349,6 @@ To round out your preparation, here are **100 more unique questions (201–300)*
 279. **Why is "V-Order" sometimes slower for Write operations?**
 280. **How do you use "Log Analytics" with Fabric?**
 
----
 
 ## **Part 15: Architecture & Strategy (281–300)**
 
@@ -386,7 +373,6 @@ To round out your preparation, here are **100 more unique questions (201–300)*
 299. **What is "Open Mirroring"?**
 300. **Where do you see Microsoft Fabric in 5 years?** (Strategy/Vision question).
 
----
 
 ### **Final Tip**
 
@@ -396,7 +382,6 @@ With 300 questions, you have covered almost every corner of the platform. Since 
 
 This final set of **100 questions (301–400)** pushes into the "Black Belt" territory of Microsoft Fabric. These cover internal engine mechanics, complex migration patterns, high-level security architecture, and the intersection of AI with the data platform.
 
----
 
 ## **Part 16: Internal Engines & Mechanics (301–320)**
 
@@ -421,7 +406,6 @@ This final set of **100 questions (301–400)** pushes into the "Black Belt" ter
 319. **Predicate Pushdown across Shortcuts:** Can a SQL query "push down" a filter to an AWS S3 bucket via a Shortcut?
 320. **Delta Lake "Deletion Vectors":** Does Fabric support Deletion Vectors to speed up `UPDATE` and `DELETE` operations?
 
----
 
 ## **Part 17: Enterprise Security & Network Hardening (321–340)**
 
@@ -446,7 +430,6 @@ This final set of **100 questions (301–400)** pushes into the "Black Belt" ter
 339. **Security of "Mirroring" Credentials:** Where are the source database credentials stored and encrypted?
 340. **OneLake "Files" Security:** Can you set different permissions on the `Files` folder vs the `Tables` folder within the same Lakehouse?
 
----
 
 ## **Part 18: Advanced CI/CD & DevOps (341–360)**
 
@@ -471,7 +454,6 @@ This final set of **100 questions (301–400)** pushes into the "Black Belt" ter
 359. **Diffing Notebooks:** How do you view the differences between two versions of a Spark Notebook in the Fabric UI?
 360. **Deployment Pipeline API:** Can you trigger a "Deploy" action using a REST API call?
 
----
 
 ## **Part 19: AI, Data Science & Copilot (361–380)**
 
@@ -496,7 +478,6 @@ This final set of **100 questions (301–400)** pushes into the "Black Belt" ter
 379. **Fine-Tuning LLMs:** Can you perform fine-tuning of Llama-3 or GPT-4 within a Fabric Spark Environment?
 380. **Feature Store:** How do you implement a "Feature Store" logic using Lakehouse tables?
 
----
 
 ## **Part 20: Edge Cases & The "Really Advanced" Stuff (381–400)**
 
@@ -521,7 +502,6 @@ This final set of **100 questions (301–400)** pushes into the "Black Belt" ter
 399. **The "Fabric Capacity Metrics" App:** How do you interpret "Smoothing" over a 24-hour window vs. a 14-day window?
 400. **The Future:** How does Microsoft's "One Data" vision eliminate the need for traditional "ETL developers"?
 
----
 
 ### **Congratulations!**
 
@@ -535,7 +515,6 @@ Since we’ve covered the technical "what" and "how" with 400 questions, the onl
 
 Here is a final "Boss Level" preparation module: **10 Strategic Scenarios** that test if you can actually design a system, followed by the most critical **Behavioral Questions** for a Fabric role.
 
----
 
 ## **1. The "Boss Level" Scenario Challenges**
 
@@ -552,7 +531,6 @@ In these questions, there is no single "right" answer. The interviewer is lookin
 9. **The 'Zero-ETL' Pitch:** "Explain to a CTO why they should use **Mirroring** for their Azure SQL database instead of a traditional Copy Pipeline. What are the risks of Mirroring?"
 10. **The AI-Ready Architecture:** "How do you structure a Lakehouse specifically so that a **Copilot** or an **LLM** can provide the most accurate answers to business questions?"
 
----
 
 ## **2. Behavioral & Soft-Skill Questions for Fabric Roles**
 
@@ -561,7 +539,6 @@ In these questions, there is no single "right" answer. The interviewer is lookin
 3. **Failure Analysis:** "Tell me about a time a data pipeline failed in production. How would your troubleshooting process change if that pipeline was running in Fabric?"
 4. **Cost Awareness:** "How do you explain the concept of 'Capacity Units' to a Project Manager who is used to paying for a fixed-price SQL Server license?"
 
----
 
 ## **3. The "Cheat Sheet" of Non-Negotiable Facts**
 
