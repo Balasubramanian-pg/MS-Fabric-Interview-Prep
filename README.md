@@ -198,7 +198,6 @@ client.log_metric("rmse", 0.1)
 - Register models in Azure ML.
 - Deploy as endpoints for real-time scoring.
 
----
 
 ### **7. Synapse Real-Time Analytics (KQL)**
 **Kusto Query Language (KQL)**:
@@ -224,7 +223,6 @@ client.log_metric("rmse", 0.1)
 - **Process**: Use KQL for real-time aggregations.
 - **Route**: Send to OneLake or Power BI.
 
----
 
 ### **8. Power BI Integration**
 **Direct Lake Mode**:
@@ -246,7 +244,6 @@ in
   Source
 ```
 
----
 
 ### **9. Data Activator**
 **Real-Time Triggers**:
@@ -263,7 +260,6 @@ in
 - Call Power Automate flow.
 - Write to a table.
 
----
 
 ### **10. Security & Governance**
 **Authentication**:
@@ -282,7 +278,6 @@ in
 **Audit Logs**:
 - Track access/changes in **Microsoft Purview**.
 
----
 
 ### **11. Performance Optimization**
 **Lakehouse**:
@@ -302,7 +297,6 @@ in
 - **Parallel Activities**: Run independent tasks concurrently.
 - **Incremental Loads**: Process only new/changed data.
 
----
 
 ### **12. Collaboration & Deployment**
 **Workspaces**:
@@ -321,7 +315,6 @@ in
   fabric workspace deploy --name "Prod" --source "Dev"
   ```
 
----
 
 ### **13. Monitoring & Observability**
 **Tools**:
@@ -342,7 +335,6 @@ in
 | **Pipelines** | Success rate, runtime. |
 | **OneLake** | Storage used, read/write ops. |
 
----
 
 ### **14. Fabric CLI (Command Line)**
 | Command | Purpose |
@@ -353,7 +345,6 @@ in
 | `fabric notebook execute --name "Transform"` | Run notebook. |
 | `fabric sql query --warehouse "WH" --query "SELECT * FROM Sales"` | Run T-SQL. |
 
----
 
 ### **15. Common Use Cases**
 | Scenario | Fabric Components | Key Steps |
@@ -365,7 +356,6 @@ in
 | **Data Warehousing** | Synapse SQL, Power BI | Create tables → Build aggregations → Visualize. |
 | **IoT Processing** | Event Streams, KQL | Ingest sensor data → Detect anomalies → Alert. |
 
----
 
 ### **16. Troubleshooting**
 | Issue | Solution |
@@ -382,7 +372,6 @@ in
 - Test pipelines with small datasets first.
 - Enable **diagnostic logs** in Fabric Portal.
 
----
 ### **17. Quick Reference: KQL vs. T-SQL vs. Spark SQL**
 | Task | KQL (Real-Time Analytics) | T-SQL (Warehouse) | Spark SQL (Data Engineering) |
 |------|---------------------------|------------------|-------------------------------|
@@ -392,13 +381,11 @@ in
 | **Time Window** | `bin(Timestamp, 1h)` | `DATEPART(hour, Timestamp)` | `date_trunc('hour', Timestamp)` |
 | **String Search** | `where Text contains "error"` | `WHERE Text LIKE '%error%'` | `WHERE Text LIKE '%error%'` |
 
----
 ### **18. Resources**
 - **Docs**: [Microsoft Fabric Docs](https://learn.microsoft.com/en-us/fabric/)
 - **Tutorials**: [Fabric Guided Tours](https://learn.microsoft.com/en-us/fabric/get-started/fabric-trial)
 - **Community**: [Fabric Tech Community](https://community.fabric.microsoft.com/)
 - **Samples**: [Fabric GitHub](https://github.com/microsoft/fabric-samples)
 
----
 **Pro Tip**: Use **Fabric’s "Try It Free"** workspace to experiment without committing to a license!
 Need a deeper dive into any area (e.g., Delta Lake optimizations, KQL functions)?
