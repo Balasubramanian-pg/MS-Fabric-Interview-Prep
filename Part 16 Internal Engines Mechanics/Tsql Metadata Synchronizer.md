@@ -150,6 +150,5 @@ Edge cases include scenarios such as:
 |---------|------|-------------|
 | 1.0 | 2026-01-15 | Initial documentation |
 
----
 
 This documentation provides a comprehensive overview of the Tsql Metadata Synchronizer, covering its purpose, conceptual model, core concepts, standard model, and related topics. It serves as a stable reference for understanding and implementing metadata synchronization in SQL Server environments.
