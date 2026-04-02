@@ -125,6 +125,5 @@ Related topics include fabric item quality control, marketing ethics, and regula
 | 1.1 | 2026-02-01 | Updated references to reflect new regulatory guidelines |
 | 1.2 | 2026-03-15 | Added section on sustainable textiles as a related topic |
 
----
 
 This documentation aims to provide a comprehensive guide to setting up endorsement certified vs promoted fabric items, covering conceptual models, terminology, core concepts, and standard practices. It is designed to be a stable reference for professionals in the textile industry, ensuring clarity and consistency in the distinction between endorsement certification and promotion.
