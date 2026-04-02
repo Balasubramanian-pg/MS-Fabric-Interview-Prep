@@ -147,6 +147,5 @@ Edge cases include scenarios where data is shared externally through unconventio
 |---------|------|-------------|
 | 1.0 | 2026-01-15 | Initial documentation |
 
----
 
 This documentation provides a comprehensive framework for understanding and implementing measures to restrict a workspace and prevent data from being shared externally. It outlines the conceptual model, key terminology, core concepts, and standard practices for achieving a secure workspace environment. By following the guidelines and patterns outlined in this document, organizations can better protect their sensitive data and maintain compliance with regulatory requirements.
