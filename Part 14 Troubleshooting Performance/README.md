@@ -23,5 +23,4 @@ This folder contains the following study materials:
 * [Why Is Vorder Sometimes Slower For Write Operations.md](./Why%20Is%20Vorder%20Sometimes%20Slower%20For%20Write%20Operations.md)
 * [Why Would A Direct Lake Report Suddenly Fall Back To Direct Query.md](./Why%20Would%20A%20Direct%20Lake%20Report%20Suddenly%20Fall%20Back%20To%20Direct%20Query.md)
 
----
 *Last updated by Auto-Indexer*
