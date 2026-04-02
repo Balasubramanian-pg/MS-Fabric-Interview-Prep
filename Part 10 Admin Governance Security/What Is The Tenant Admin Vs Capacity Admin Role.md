@@ -158,6 +158,5 @@ Provide exactly **five** authoritative external references that substantiate or 
 |---------|------|-------------|
 | 1.0 | 2026-01-14 | Initial documentation |
 
----
 
 This documentation aims to provide a comprehensive understanding of the Tenant Admin vs Capacity Admin roles, serving as a stable reference for professionals working in multi-tenant environments.
