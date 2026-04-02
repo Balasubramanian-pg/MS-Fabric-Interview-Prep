@@ -23,5 +23,4 @@ This folder contains the following study materials:
 * [What Is The Fast Start Feature For Spark Clusters.md](./What%20Is%20The%20Fast%20Start%20Feature%20For%20Spark%20Clusters.md)
 * [What Is The Semantic Link Library In Pyspark.md](./What%20Is%20The%20Semantic%20Link%20Library%20In%20Pyspark.md)
 
----
 *Last updated by Auto-Indexer*
