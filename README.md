@@ -126,7 +126,6 @@ Like are they even any interview questions?
   df.write.partitionBy("Year", "Month").format("delta").save("Tables/Sales")
   ```
 
----
 
 ### **5. Synapse Data Warehousing (T-SQL)**
 **Key Features**:
@@ -167,7 +166,6 @@ SELECT * FROM Sales WHERE Date > '2023-01-01';
 - **Partition tables** by date/region.
 - **Avoid `SELECT *`**: Specify columns.
 
----
 
 ### **6. Synapse Data Science**
 **Key Tools**:
