@@ -23,5 +23,4 @@ This folder contains the following study materials:
 * [What Is Zeroetl Integration With Snowflake.md](./What%20Is%20Zeroetl%20Integration%20With%20Snowflake.md)
 * [Which Databases Are Currently Supported For Mirroring.md](./Which%20Databases%20Are%20Currently%20Supported%20For%20Mirroring.md)
 
----
 *Last updated by Auto-Indexer*
