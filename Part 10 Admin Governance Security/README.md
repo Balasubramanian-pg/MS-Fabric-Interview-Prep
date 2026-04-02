@@ -23,5 +23,4 @@ This folder contains the following study materials:
 * [What Is The Tenant Admin Vs Capacity Admin Role.md](./What%20Is%20The%20Tenant%20Admin%20Vs%20Capacity%20Admin%20Role.md)
 * [What Is Workspace Identity.md](./What%20Is%20Workspace%20Identity.md)
 
----
 *Last updated by Auto-Indexer*
