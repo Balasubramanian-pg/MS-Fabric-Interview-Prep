@@ -23,5 +23,4 @@ This folder contains the following study materials:
 * [When Should You Choose A Lakehouse Over A Warehouse.md](./When%20Should%20You%20Choose%20A%20Lakehouse%20Over%20A%20Warehouse.md)
 * [Where Do You See Microsoft Fabric In 5 Years.md](./Where%20Do%20You%20See%20Microsoft%20Fabric%20In%205%20Years.md)
 
----
 *Last updated by Auto-Indexer*
