@@ -23,5 +23,4 @@ This folder contains the following study materials:
 * [What Is Update Policy In A Kql Database.md](./What%20Is%20Update%20Policy%20In%20A%20Kql%20Database.md)
 * [What Is Zeroetl Ingestion For Kql.md](./What%20Is%20Zeroetl%20Ingestion%20For%20Kql.md)
 
----
 *Last updated by Auto-Indexer*
