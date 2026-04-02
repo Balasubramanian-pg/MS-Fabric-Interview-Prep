@@ -126,6 +126,5 @@ Related topics include: data governance, data quality, data security, and data a
 |---------|------|-------------|
 | 1.0 | 2026-01-15 | Initial documentation |
 
----
 
 Note: This documentation is a comprehensive and authoritative guide to automating discovery of new data assets. It provides a conceptual model, terminology, constraints, and standard usage patterns, as well as common patterns, anti-patterns, and edge cases. The references provided are normative and authoritative, and they substantiate or inform the topic.
