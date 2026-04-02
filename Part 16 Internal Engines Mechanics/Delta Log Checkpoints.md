@@ -161,5 +161,3 @@ Provide exactly **five** authoritative external references that substantiate or 
 | Version | Date | Description |
 |---------|------|-------------|
 | 1.0 | 2026-01-15 | Initial documentation |
-
----
