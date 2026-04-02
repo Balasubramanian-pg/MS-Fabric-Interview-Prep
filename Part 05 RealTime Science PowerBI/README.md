@@ -23,5 +23,4 @@ This folder contains the following study materials:
 * [What Is The Kql Database.md](./What%20Is%20The%20Kql%20Database.md)
 * [Why Would A Company Choose Fabric Over Snowflake.md](./Why%20Would%20A%20Company%20Choose%20Fabric%20Over%20Snowflake.md)
 
----
 *Last updated by Auto-Indexer*
