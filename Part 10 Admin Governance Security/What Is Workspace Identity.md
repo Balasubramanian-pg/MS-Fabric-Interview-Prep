@@ -156,6 +156,5 @@ Provide exactly **five** authoritative external references that substantiate or 
 |---------|------|-------------|
 | 1.0 | 2026-01-14 | Initial documentation |
 
----
 
 This comprehensive documentation provides a foundational understanding of Workspace Identity, covering its purpose, conceptual model, core concepts, and standard practices. It serves as a stable reference for implementing and managing Workspace Identity solutions, ensuring secure, efficient, and scalable collaboration across various workspaces.
