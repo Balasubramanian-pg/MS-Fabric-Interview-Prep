@@ -147,6 +147,5 @@ The standard model has the following invariants:
 |---------|------|-------------|
 | 1.0 | 2026-01-14 | Initial documentation |
 
----
 
 This documentation provides a comprehensive framework for auditing who downloaded data from a lakehouse, including conceptual models, terminology, core concepts, and standard models. It also highlights common patterns, anti-patterns, edge cases, and related topics, and provides authoritative references for further reading.
