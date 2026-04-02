@@ -7,5 +7,4 @@ This folder contains the following study materials:
 * [Influencing Stakeholders.md](./Influencing%20Stakeholders.md)
 * [Staying Current.md](./Staying%20Current.md)
 
----
 *Last updated by Auto-Indexer*
