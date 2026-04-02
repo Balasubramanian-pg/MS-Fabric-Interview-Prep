@@ -160,6 +160,5 @@ Provide exactly **five** authoritative external references that substantiate or 
 |---------|------|-------------|
 | 1.0 | 2026-01-15 | Initial documentation |
 
----
 
 This documentation provides a comprehensive overview of monitoring disk spill in Spark jobs, including the conceptual model, terminology, core concepts, and standard model. It also covers common patterns, anti-patterns, edge cases, and related topics, providing a thorough understanding of the subject. The references section provides authoritative external references that substantiate or inform this topic.
