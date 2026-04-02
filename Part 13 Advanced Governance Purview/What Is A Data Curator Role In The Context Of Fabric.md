@@ -130,6 +130,5 @@ Related topics include data architecture, data engineering, data science, and in
 |---------|------|-------------|
 | 1.0 | 2026-01-15 | Initial documentation |
 
----
 
 This documentation provides a comprehensive overview of the Data Curator role in the context of Fabric, covering conceptual models, terminology, core concepts, and standard practices. It serves as a stable reference for understanding the responsibilities, challenges, and best practices associated with this critical role in data management.
