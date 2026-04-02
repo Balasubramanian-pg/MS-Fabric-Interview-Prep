@@ -23,5 +23,4 @@ This folder contains the following study materials:
 * [Trusted Service Access.md](./Trusted%20Service%20Access.md)
 * [Workspace Lockdown Mode.md](./Workspace%20Lockdown%20Mode.md)
 
----
 *Last updated by Auto-Indexer*
