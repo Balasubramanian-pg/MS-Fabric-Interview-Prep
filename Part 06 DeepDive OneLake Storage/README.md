@@ -23,5 +23,4 @@ This folder contains the following study materials:
 * [What Is The Httpswwwgooglecomsearchqonelakedfsfabricmicrosoftcom Endpoint Used For.md](./What%20Is%20The%20Httpswwwgooglecomsearchqonelakedfsfabricmicrosoftcom%20Endpoint%20Used%20For.md)
 * [What Is The Maximum Size Of A Single File In Onelake.md](./What%20Is%20The%20Maximum%20Size%20Of%20A%20Single%20File%20In%20Onelake.md)
 
----
 *Last updated by Auto-Indexer*
