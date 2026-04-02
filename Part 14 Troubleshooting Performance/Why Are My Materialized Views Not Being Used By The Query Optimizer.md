@@ -160,6 +160,5 @@ Provide exactly **five** authoritative external references that substantiate or 
 |---------|------|-------------|
 | 1.0 | 2026-01-15 | Initial documentation |
 
----
 
 This documentation provides a comprehensive overview of why materialized views may not be used by the query optimizer, covering conceptual models, terminology, core concepts, and standard practices. It aims to serve as a stable reference for understanding and addressing issues related to materialized views and query optimization in database management systems.
