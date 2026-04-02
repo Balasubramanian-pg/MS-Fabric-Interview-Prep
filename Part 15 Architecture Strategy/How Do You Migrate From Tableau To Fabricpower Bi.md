@@ -161,6 +161,5 @@ The following authoritative external references substantiate or inform this topi
 |---------|------|-------------|
 | 1.0 | 2026-01-15 | Initial documentation |
 
----
 
 Note: This documentation is a comprehensive guide to migrating from Tableau to Fabricpower BI, covering the conceptual model, terminology, constraints, and standard usage patterns. It provides a stable reference for teams and individuals involved in the migration process.
