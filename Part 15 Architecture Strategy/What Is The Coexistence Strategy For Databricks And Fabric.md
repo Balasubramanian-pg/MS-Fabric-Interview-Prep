@@ -149,6 +149,5 @@ Provide exactly **five** authoritative external references that substantiate or 
 |---------|------|-------------|
 | 1.0 | 2026-01-15 | Initial documentation |
 
----
 
 This documentation provides a comprehensive framework for understanding the coexistence strategy of Databricks and Fabric, covering conceptual models, terminology, core concepts, and standard practices. It serves as a stable reference for architects, engineers, and data professionals seeking to integrate these platforms for advanced data analytics and engineering use cases.
