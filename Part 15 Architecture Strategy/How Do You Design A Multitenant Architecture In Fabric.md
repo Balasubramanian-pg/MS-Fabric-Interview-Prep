@@ -159,6 +159,5 @@ Provide exactly **five** authoritative external references that substantiate or 
 |---------|------|-------------|
 | 1.0 | 2026-01-15 | Initial documentation |
 
----
 
 This canonical documentation provides a comprehensive foundation for understanding and designing multitenant architectures in Fabric, covering conceptual models, core concepts, standard models, common patterns, anti-patterns, and related topics. It serves as a stable reference for architects, developers, and operators working on multitenant systems.
