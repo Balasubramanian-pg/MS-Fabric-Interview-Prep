@@ -162,6 +162,5 @@ Provide exactly **five** authoritative external references that substantiate or 
 |---------|------|-------------|
 | 1.0 | 2026-01-15 | Initial documentation |
 
----
 
 This documentation provides a comprehensive overview of running Docker containers in Fabric, covering conceptual models, terminology, core concepts, standard models, common patterns, anti-patterns, edge cases, and related topics. By following this documentation, developers and operators can ensure secure, efficient, and scalable deployment of containerized applications in a decentralized environment.
