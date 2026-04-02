@@ -158,6 +158,5 @@ Provide exactly **five** authoritative external references that substantiate or 
 |---------|------|-------------|
 | 1.0 | 2026-01-15 | Initial documentation |
 
----
 
 This documentation provides a comprehensive overview of Sql Distributed Query Processing (DQP), including its conceptual model, terminology, constraints, and standard usage patterns. It serves as a stable reference for understanding the principles and best practices of DQP, and is intended to be implementation-agnostic and applicable to a wide range of distributed database systems.
