@@ -23,5 +23,4 @@ This folder contains the following study materials:
 * [What Is The Copy Activity.md](./What%20Is%20The%20Copy%20Activity.md)
 * [What Is The Foreach Activity.md](./What%20Is%20The%20Foreach%20Activity.md)
 
----
 *Last updated by Auto-Indexer*
