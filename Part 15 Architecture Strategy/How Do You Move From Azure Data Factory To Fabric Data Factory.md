@@ -164,6 +164,5 @@ Provide exactly **five** authoritative external references that substantiate or 
 |---------|------|-------------|
 | 1.0 | 2026-01-15 | Initial documentation |
 
----
 
 This documentation provides a comprehensive guide for migrating from Azure Data Factory to Fabric Data Factory, covering conceptual models, terminology, core concepts, standard models, common patterns, anti-patterns, edge cases, and related topics. By following this documentation, organizations can ensure a smooth transition and minimize downtime, while leveraging the features and benefits of Fabric Data Factory.
