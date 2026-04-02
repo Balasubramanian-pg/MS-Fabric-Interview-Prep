@@ -23,5 +23,4 @@ This folder contains the following study materials:
 * [Vector Search In Kql.md](./Vector%20Search%20In%20Kql.md)
 * [Vorder Bitshuffling.md](./Vorder%20Bitshuffling.md)
 
----
 *Last updated by Auto-Indexer*
