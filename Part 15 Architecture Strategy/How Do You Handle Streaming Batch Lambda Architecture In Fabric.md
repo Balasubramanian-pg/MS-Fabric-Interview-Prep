@@ -160,6 +160,5 @@ The following five authoritative external references substantiate or inform this
 |---------|------|-------------|
 | 1.0 | 2026-01-15 | Initial documentation |
 
----
 
 This documentation provides a comprehensive overview of handling streaming batch Lambda architecture in Fabric, including its conceptual model, terminology, constraints, and standard usage patterns. It serves as a stable reference for developers, architects, and engineers working with streaming batch Lambda architecture in Fabric.
