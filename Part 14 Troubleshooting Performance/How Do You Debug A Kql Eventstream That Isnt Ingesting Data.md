@@ -152,5 +152,3 @@ The following authoritative external references substantiate or inform this topi
 | Version | Date | Description |
 |---------|------|-------------|
 | 1.0 | 2026-01-15 | Initial documentation |
-
----
