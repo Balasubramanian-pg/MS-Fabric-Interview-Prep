@@ -157,6 +157,5 @@ Provide exactly **five** authoritative external references that substantiate or 
 |---------|------|-------------|
 | 1.0 | 2026-01-15 | Initial documentation |
 
----
 
 This documentation provides a comprehensive overview of how the Lineage View handles a pipeline that calls a stored procedure, covering conceptual models, terminology, core concepts, and standard practices. It serves as a stable reference for understanding and implementing data lineage and pipeline management, ensuring data integrity, security, and compliance.
