@@ -23,5 +23,4 @@ This folder contains the following study materials:
 * [What Is The Synapse Data Warehouse In Fabric.md](./What%20Is%20The%20Synapse%20Data%20Warehouse%20In%20Fabric.md)
 * [What Is Vorder In The Context Of The Warehouse.md](./What%20Is%20Vorder%20In%20The%20Context%20Of%20The%20Warehouse.md)
 
----
 *Last updated by Auto-Indexer*
