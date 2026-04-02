@@ -159,6 +159,5 @@ Provide exactly **five** authoritative external references that substantiate or 
 |---------|------|-------------|
 | 1.0 | 2026-01-15 | Initial documentation |
 
----
 
 This documentation provides a comprehensive guide to understanding and addressing schema mismatch errors in pipeline copy activities, ensuring data pipelines operate reliably and efficiently.
