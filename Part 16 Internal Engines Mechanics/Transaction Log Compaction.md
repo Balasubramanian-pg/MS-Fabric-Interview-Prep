@@ -147,6 +147,5 @@ Related topics include:
 |---------|------|-------------|
 | 1.0 | 2026-01-15 | Initial documentation |
 
----
 
 This documentation provides a comprehensive overview of Transaction Log Compaction, including its conceptual model, terminology, constraints, and standard usage patterns. It serves as a stable reference for developers, system administrators, and researchers working with distributed systems and databases.
