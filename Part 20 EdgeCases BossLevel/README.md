@@ -23,5 +23,4 @@ This folder contains the following study materials:
 * [Warehouse Deadlocks.md](./Warehouse%20Deadlocks.md)
 * [Workspace Migration Across Capacities.md](./Workspace%20Migration%20Across%20Capacities.md)
 
----
 *Last updated by Auto-Indexer*
