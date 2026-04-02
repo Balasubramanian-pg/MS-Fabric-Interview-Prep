@@ -159,6 +159,5 @@ Provide exactly **five** authoritative external references that substantiate or 
 |---------|------|-------------|
 | 1.0 | 2026-01-15 | Initial documentation |
 
----
 
 This documentation provides a comprehensive overview of the Direct Lake Metadata Handshake, including its conceptual model, terminology, constraints, and standard usage patterns. It serves as a stable reference for implementers, developers, and users of data lakes and metadata management systems.
