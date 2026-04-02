@@ -140,6 +140,5 @@ Edge cases and boundary conditions can challenge the standard model, such as:
 |---------|------|-------------|
 | 1.0 | 2026-01-14 | Initial documentation |
 
----
 
 This documentation provides a comprehensive guide to carryover and borrowing in fabric capacity, including their conceptual model, terminology, constraints, and standard usage patterns. It is intended to serve as a stable reference for organizations seeking to optimize their fabric utilization and minimize waste.
