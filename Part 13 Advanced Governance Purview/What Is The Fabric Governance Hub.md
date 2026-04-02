@@ -159,6 +159,5 @@ Related topics include:
 |---------|------|-------------|
 | 1.0 | 2026-01-15 | Initial documentation |
 
----
 
 Note: This documentation is a comprehensive guide to the Fabric Governance Hub, providing a conceptual framework, terminology, and core concepts for managing and governing blockchain networks. It is intended to serve as a stable reference for developers, administrators, and researchers working with Hyperledger Fabric and other blockchain frameworks.
