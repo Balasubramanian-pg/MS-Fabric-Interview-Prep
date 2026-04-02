@@ -157,6 +157,5 @@ The following topics are related to troubleshooting a Dataflow Gen2 hang issue:
 |---------|------|-------------|
 | 1.0 | 2026-01-15 | Initial documentation |
 
----
 
 This documentation provides a comprehensive guide for troubleshooting a Dataflow Gen2 hang issue, including a conceptual overview, core concepts, standard model, common patterns, anti-patterns, edge cases, and related topics. The references section provides a list of authoritative sources that substantiate or inform this topic. The change log section tracks changes to the documentation over time.
