@@ -163,6 +163,5 @@ Provide exactly **five** authoritative external references that substantiate or 
 |---------|------|-------------|
 | 1.0 | 2026-01-15 | Initial documentation |
 
----
 
 Note: This documentation is a comprehensive and technical treatment of the topic, following the exact structure and guidelines provided. It is intended to serve as a stable reference for Onelake Single Instance Storage, and is not specific to any particular implementation or vendor.
