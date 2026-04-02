@@ -140,6 +140,5 @@ Edge cases include scenarios where data sources are temporarily unavailable, dat
 |---------|------|-------------|
 | 1.0 | 2026-01-15 | Initial documentation |
 
----
 
 This comprehensive documentation provides a thorough understanding of the Onelake Proxy Service, covering its purpose, conceptual model, terminology, core concepts, standard model, common patterns, anti-patterns, edge cases, and related topics. It is designed to serve as a stable reference for the implementation and use of the Onelake Proxy Service, ensuring secure, scalable, and efficient data access.
