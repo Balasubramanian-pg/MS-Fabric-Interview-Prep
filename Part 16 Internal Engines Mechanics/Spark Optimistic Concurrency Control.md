@@ -164,6 +164,5 @@ Provide exactly **five** authoritative external references that substantiate or 
 |---------|------|-------------|
 | 1.0 | 2026-01-15 | Initial documentation |
 
----
 
 Note: This documentation is a comprehensive guide to Spark Optimistic Concurrency Control, covering its conceptual model, terminology, core concepts, standard model, common patterns, anti-patterns, edge cases, and related topics. The references provided are authoritative and informative, substantiating the topic and providing further insights into the subject matter.
