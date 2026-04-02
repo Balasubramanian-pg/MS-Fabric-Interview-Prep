@@ -162,6 +162,5 @@ The following authoritative external references substantiate or inform this topi
 |---------|------|-------------|
 | 1.0 | 2026-01-15 | Initial documentation |
 
----
 
 This documentation provides a comprehensive framework for troubleshooting on-premises data gateway connection drops, covering conceptual models, terminology, core concepts, and standard models. It also addresses common patterns, anti-patterns, edge cases, and related topics, and includes authoritative external references to substantiate the topic.
