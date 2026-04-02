@@ -158,6 +158,5 @@ Provide exactly **five** authoritative external references that substantiate or 
 |---------|------|-------------|
 | 1.0 | 2026-01-15 | Initial documentation |
 
----
 
 This documentation aims to provide a comprehensive and authoritative guide to understanding why a Direct Lake Report might suddenly fall back to Direct Query, covering the conceptual model, terminology, core concepts, and standard practices. It serves as a stable reference for professionals working with data lakes, Direct Lake Reports, and Direct Query, helping to ensure reliable and performant analytics solutions.
