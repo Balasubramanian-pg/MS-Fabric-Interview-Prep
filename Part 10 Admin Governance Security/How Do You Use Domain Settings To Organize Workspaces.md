@@ -154,6 +154,5 @@ Provide exactly **five** authoritative external references that substantiate or 
 |---------|------|-------------|
 | 1.0 | 2026-01-14 | Initial documentation |
 
----
 
 This documentation provides a comprehensive framework for understanding and implementing domain settings to organize workspaces effectively. It covers conceptual models, terminology, core concepts, and standard practices, along with references to authoritative sources for further guidance.
