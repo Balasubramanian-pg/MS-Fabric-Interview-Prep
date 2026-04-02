@@ -136,6 +136,5 @@ Edge cases, such as data integration from multiple sources or data processing ac
 |---------|------|-------------|
 | 1.0 | 2026-01-14 | Initial documentation |
 
----
 
 This documentation provides a comprehensive and authoritative overview of the Lineage View concept, its components, and its applications. It serves as a stable reference for data stewards, data engineers, and data scientists seeking to understand and implement data lineage tracking and data provenance in their organizations.
