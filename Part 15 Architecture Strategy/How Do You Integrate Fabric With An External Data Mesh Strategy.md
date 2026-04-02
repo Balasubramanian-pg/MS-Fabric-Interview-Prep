@@ -157,6 +157,5 @@ The following references are authoritative and informative:
 |---------|------|-------------|
 | 1.0 | 2026-01-15 | Initial documentation |
 
----
 
 This documentation provides a comprehensive overview of integrating fabric with an external data mesh strategy, including the conceptual model, terminology, constraints, and standard usage patterns. It is intended to serve as a stable reference for data architects, engineers, and analysts, and to provide a foundation for further research and development in this area.
