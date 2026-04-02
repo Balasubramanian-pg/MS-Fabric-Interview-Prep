@@ -161,6 +161,5 @@ Provide exactly **five** authoritative external references that substantiate or 
 |---------|------|-------------|
 | 1.0 | 2026-01-15 | Initial documentation |
 
----
 
 Note: This documentation is a comprehensive and authoritative reference for predicate pushdown across shortcuts. It provides a detailed explanation of the conceptual model, terminology, constraints, and standard usage patterns, as well as common patterns, anti-patterns, and edge cases. The references provided are authoritative and substantiate the information presented in this documentation.
