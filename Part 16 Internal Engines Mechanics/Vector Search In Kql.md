@@ -164,6 +164,5 @@ Provide exactly **five** authoritative external references that substantiate or 
 |---------|------|-------------|
 | 1.0 | 2026-01-15 | Initial documentation |
 
----
 
 This documentation provides a comprehensive overview of vector search in KQL, covering conceptual models, terminology, core concepts, and standard usage patterns. It serves as a stable reference for developers, researchers, and practitioners working with vector search and KQL.
