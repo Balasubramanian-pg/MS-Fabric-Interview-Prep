@@ -130,6 +130,5 @@ Edge cases in metadata scanning in fabric include handling large volumes of meta
 |---------|------|-------------|
 | 1.0 | 2026-01-15 | Initial documentation |
 
----
 
 Note: This documentation is a comprehensive and authoritative guide to metadata scanning in fabric. It provides a detailed explanation of the conceptual model, terminology, constraints, and standard usage patterns, as well as common patterns, anti-patterns, and edge cases. The references provided are normative and authoritative, and the change log will be updated as necessary to reflect changes to the documentation.
