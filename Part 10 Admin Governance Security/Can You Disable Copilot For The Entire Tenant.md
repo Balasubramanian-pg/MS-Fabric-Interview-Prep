@@ -135,6 +135,5 @@ One edge case is when an organization has a mixed environment where some teams r
 | 1.0 | 2026-01-14 | Initial documentation |
 | 1.1 | 2026-02-01 | Added references to cloud security frameworks and updated terminology definitions for clarity |
 
----
 
 This documentation aims to provide a comprehensive and authoritative guide to disabling Copilot for an entire tenant, covering conceptual models, terminology, core concepts, and standard practices. It is designed to serve as a stable reference for organizations seeking to manage Copilot effectively and securely.
