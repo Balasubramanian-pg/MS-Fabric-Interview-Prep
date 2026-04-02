@@ -140,6 +140,5 @@ Edge cases include scenarios where data sensitivity levels change over time or w
 |---------|------|-------------|
 | 1.0 | 2026-01-15 | Initial documentation |
 
----
 
 This documentation provides a comprehensive overview of applying sensitivity labels to Spark Notebooks, covering conceptual models, terminology, core concepts, and standard practices. It serves as a stable reference for understanding and implementing sensitivity labeling in Spark-based data processing environments.
