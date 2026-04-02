@@ -163,6 +163,5 @@ Provide exactly **five** authoritative external references that substantiate or 
 |---------|------|-------------|
 | 1.0 | 2026-01-14 | Initial documentation |
 
----
 
 This documentation provides a comprehensive overview of the Resource Governance Limit for Spark, including conceptual models, terminology, constraints, and standard usage patterns. It serves as a stable reference for understanding and implementing resource governance in Spark environments.
