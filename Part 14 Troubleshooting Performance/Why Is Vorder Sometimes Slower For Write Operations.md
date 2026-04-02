@@ -151,6 +151,5 @@ Provide exactly **five** authoritative external references that substantiate or 
 |---------|------|-------------|
 | 1.0 | 2026-01-15 | Initial documentation |
 
----
 
 This documentation aims to provide a comprehensive and authoritative guide to understanding why Vorder is sometimes slower for write operations, covering conceptual models, terminology, core concepts, and standard practices. It is designed to serve as a stable reference for professionals and researchers working on optimizing data storage and retrieval systems.
