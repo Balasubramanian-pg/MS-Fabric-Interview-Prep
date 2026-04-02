@@ -146,6 +146,5 @@ The following references are authoritative and informative:
 |---------|------|-------------|
 | 1.0 | 2026-01-15 | Initial documentation |
 
----
 
 Note: This documentation is a comprehensive guide to building a data lab environment within Fabric. It provides a conceptual overview, terminology, and standard model, as well as common patterns, anti-patterns, and edge cases. The references provided are authoritative and informative, and the change log is maintained to track updates and revisions.
