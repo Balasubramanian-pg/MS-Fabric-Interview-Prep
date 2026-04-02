@@ -141,6 +141,5 @@ Related topics include:
 |---------|------|-------------|
 | 1.0 | 2026-01-15 | Initial documentation |
 
----
 
 This canonical documentation provides a comprehensive framework for understanding the concepts of Live Connect and Direct Lake, including their definitions, interactions, and application scenarios. It serves as a stable reference for architects, engineers, and data professionals navigating the complexities of modern data architectures.
