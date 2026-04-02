@@ -153,6 +153,5 @@ Provide exactly **five** authoritative external references that substantiate or 
 |---------|------|-------------|
 | 1.0 | 2026-01-15 | Initial documentation |
 
----
 
 This canonical documentation provides a comprehensive overview of Delta Lake Deletion Vectors, including their conceptual model, terminology, constraints, and standard usage patterns. It serves as a stable reference for understanding and implementing Delta Lake Deletion Vectors in a variety of contexts.
