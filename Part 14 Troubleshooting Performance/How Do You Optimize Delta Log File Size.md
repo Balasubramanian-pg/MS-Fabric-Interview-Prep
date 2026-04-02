@@ -132,6 +132,5 @@ Edge cases include scenarios where delta log files are extremely large or small,
 |---------|------|-------------|
 | 1.0 | 2026-01-15 | Initial documentation |
 
----
 
 Note: This documentation is a comprehensive guide to optimizing delta log file size, covering conceptual models, terminology, core concepts, standard models, common patterns, anti-patterns, edge cases, and related topics. It provides a stable reference for developers, architects, and operators working with delta log files in various data processing frameworks and storage systems.
