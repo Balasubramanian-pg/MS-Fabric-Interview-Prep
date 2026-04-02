@@ -146,6 +146,5 @@ Provide exactly **five** authoritative external references that substantiate or 
 |---------|------|-------------|
 | 1.0 | 2026-01-15 | Initial documentation |
 
----
 
 Note: This documentation is subject to change and may not reflect the latest developments or updates. It is recommended to check the official Microsoft Purview documentation and other authoritative sources for the most up-to-date information.
