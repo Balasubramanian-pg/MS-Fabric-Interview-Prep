@@ -139,6 +139,5 @@ Related topics include data architecture, data quality management, and informati
 |---------|------|-------------|
 | 1.0 | 2026-01-15 | Initial documentation |
 
----
 
 This comprehensive documentation provides a foundational understanding of the Data Map in Purview for Fabric Items, covering its purpose, conceptual model, terminology, and standard practices. It serves as a stable reference for professionals seeking to implement and manage data maps effectively within their organizations.
