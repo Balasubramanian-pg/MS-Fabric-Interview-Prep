@@ -153,6 +153,5 @@ Provide exactly **five** authoritative external references that substantiate or 
 |---------|------|-------------|
 | 1.0 | 2026-01-15 | Initial documentation |
 
----
 
 Note: This documentation is a comprehensive and authoritative guide to the Hub and Spoke data model in Fabric. It provides a detailed overview of the model, its components, and its applications, as well as guidance on best practices, common patterns, and anti-patterns. The documentation is intended to serve as a stable reference for data architects, data engineers, and data analysts working with the Hub and Spoke model.
