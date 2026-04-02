@@ -155,6 +155,5 @@ Provide exactly **five** authoritative external references that substantiate or 
 | 1.1 | 2026-02-01 | Added section on edge cases and boundary conditions |
 | 1.2 | 2026-03-15 | Updated references to include PostgreSQL documentation |
 
----
 
 This documentation is subject to updates and revisions as the field of database management and materialized views continues to evolve.
