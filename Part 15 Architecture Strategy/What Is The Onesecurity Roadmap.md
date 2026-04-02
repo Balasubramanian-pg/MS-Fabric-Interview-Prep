@@ -140,6 +140,5 @@ Related topics include:
 |---------|------|-------------|
 | 1.0 | 2026-01-15 | Initial documentation |
 
----
 
 This documentation provides a comprehensive overview of the Onesecurity Roadmap, including its conceptual model, terminology, constraints, and standard usage patterns. It is intended to serve as a stable reference for organizations seeking to implement a unified approach to cybersecurity.
