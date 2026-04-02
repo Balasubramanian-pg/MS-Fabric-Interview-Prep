@@ -158,6 +158,5 @@ Provide exactly **five** authoritative external references that substantiate or 
 |---------|------|-------------|
 | 1.0 | 2026-01-14 | Initial documentation |
 
----
 
 This documentation provides a comprehensive overview of Customer Managed Keys (CMK) support in Fabric, covering the conceptual model, terminology, core concepts, and standard practices. It serves as a stable reference for understanding and implementing CMK support in Fabric networks, ensuring secure and flexible key management for distributed ledger technology (DLT) applications.
