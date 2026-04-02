@@ -156,6 +156,5 @@ The following authoritative external references substantiate or inform this topi
 |---------|------|-------------|
 | 1.0 | 2026-01-15 | Initial documentation |
 
----
 
 This documentation provides a comprehensive guide to debugging a Spark driver OOM error, covering the conceptual model, terminology, constraints, and standard usage patterns. By following the standard model and avoiding anti-patterns, developers can effectively debug and resolve OOM errors, ensuring reliable and efficient operation of their Spark applications.
