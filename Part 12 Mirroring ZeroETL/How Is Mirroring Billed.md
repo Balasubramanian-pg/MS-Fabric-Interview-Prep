@@ -4,5 +4,4 @@
 
 (Compute for replication vs. storage in OneLake).
 
----
 *Auto-generated from interview prep list.*
