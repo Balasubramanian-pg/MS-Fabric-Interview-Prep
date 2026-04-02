@@ -155,6 +155,5 @@ Provide exactly **five** authoritative external references that substantiate or 
 |---------|------|-------------|
 | 1.0 | 2026-01-14 | Initial documentation |
 
----
 
 This documentation provides a comprehensive overview of splitting one fabric capacity across multiple Azure subscriptions, covering conceptual models, terminology, core concepts, and standard practices. It serves as a foundational resource for understanding and managing Azure resources efficiently.
