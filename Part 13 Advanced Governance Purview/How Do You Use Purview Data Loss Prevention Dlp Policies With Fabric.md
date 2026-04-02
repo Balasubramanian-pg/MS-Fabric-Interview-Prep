@@ -156,6 +156,5 @@ Provide exactly **five** authoritative external references that substantiate or 
 |---------|------|-------------|
 | 1.0 | 2026-01-15 | Initial documentation |
 
----
 
 This comprehensive documentation provides a foundation for understanding and implementing Purview DLP policies with Fabric, ensuring data security and compliance across the data ecosystem.
