@@ -134,6 +134,5 @@ Related topics include GraphQL schema design, data source integration, API gatew
 |---------|------|-------------|
 | 1.0 | 2026-01-15 | Initial documentation for the Fabric API for GraphQL Preview. |
 
----
 
 This comprehensive documentation provides a foundational understanding of the Fabric API for GraphQL Preview, covering its purpose, conceptual model, terminology, core concepts, and standard practices. It serves as a stable reference for developers, architects, and stakeholders involved in the design, implementation, and operation of the Fabric API, ensuring a consistent and scalable approach to data access and management.
