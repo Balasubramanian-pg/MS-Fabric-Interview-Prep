@@ -159,6 +159,5 @@ Related topics include:
 |---------|------|-------------|
 | 1.0 | 2026-01-15 | Initial documentation |
 
----
 
 This documentation provides a comprehensive overview of how Fabric handles disaster recovery, including conceptual models, terminology, core concepts, and standard models. It also highlights common patterns, anti-patterns, and edge cases, and provides references to authoritative sources for further reading.
