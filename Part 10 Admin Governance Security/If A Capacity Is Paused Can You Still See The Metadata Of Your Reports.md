@@ -137,5 +137,3 @@ Edge cases include scenarios where a capacity pause affects report metadata due 
 | Version | Date | Description |
 |---------|------|-------------|
 | 1.0 | 2026-01-14 | Initial documentation |
-
----
