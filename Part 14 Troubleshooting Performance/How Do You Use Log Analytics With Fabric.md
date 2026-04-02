@@ -159,6 +159,5 @@ Provide exactly **five** authoritative external references that substantiate or 
 |---------|------|-------------|
 | 1.0 | 2026-01-15 | Initial documentation |
 
----
 
 This documentation provides a comprehensive framework for understanding and implementing log analytics with fabric, covering conceptual models, terminology, core concepts, and standard practices. It serves as a stable reference for developers, operators, and researchers working with fabric networks and log analytics systems.
