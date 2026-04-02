@@ -23,5 +23,4 @@ This folder contains the following study materials:
 * [What Is The Refresh History Limit For Dataflows.md](./What%20Is%20The%20Refresh%20History%20Limit%20For%20Dataflows.md)
 * [What Is Valuenativequery In Dataflow Gen2.md](./What%20Is%20Valuenativequery%20In%20Dataflow%20Gen2.md)
 
----
 *Last updated by Auto-Indexer*
