@@ -133,6 +133,5 @@ The model has the following invariants:
 |---------|------|-------------|
 | 1.0 | 2026-01-15 | Initial documentation |
 
----
 
 Note: This documentation is a comprehensive and authoritative guide to tracking data lineage across a shortcut. It provides a clear and concise overview of the concepts, techniques, and best practices involved in data lineage tracking, and is intended to serve as a stable reference for practitioners and researchers in the field.
