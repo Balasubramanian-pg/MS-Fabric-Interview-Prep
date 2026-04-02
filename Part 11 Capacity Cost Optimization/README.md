@@ -23,5 +23,4 @@ This folder contains the following study materials:
 * [What Is The Difference Between F Skus And P Skus.md](./What%20Is%20The%20Difference%20Between%20F%20Skus%20And%20P%20Skus.md)
 * [What Is The Smalltomedium Business Smb Entry Point For Fabric.md](./What%20Is%20The%20Smalltomedium%20Business%20Smb%20Entry%20Point%20For%20Fabric.md)
 
----
 *Last updated by Auto-Indexer*
