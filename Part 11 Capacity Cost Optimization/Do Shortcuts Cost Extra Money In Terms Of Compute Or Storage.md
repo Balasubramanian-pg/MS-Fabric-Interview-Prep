@@ -132,6 +132,5 @@ Edge cases include scenarios where shortcuts are used in environments with highl
 |---------|------|-------------|
 | 1.0 | 2026-01-14 | Initial documentation |
 
----
 
 This documentation aims to serve as a comprehensive and authoritative guide to understanding the implications of shortcuts on compute and storage costs, providing a foundation for further exploration and implementation of efficient shortcut strategies.
