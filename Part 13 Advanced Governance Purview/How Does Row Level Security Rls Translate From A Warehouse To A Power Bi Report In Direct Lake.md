@@ -170,6 +170,5 @@ Provide exactly **five** authoritative external references that substantiate or 
 |---------|------|-------------|
 | 1.0 | 2026-01-15 | Initial documentation |
 
----
 
 This documentation provides a comprehensive overview of translating Row Level Security (RLS) from a warehouse to a Power BI report in Direct Lake, including the conceptual model, core concepts, standard model, common patterns, anti-patterns, edge cases, and related topics. It serves as a stable reference for implementing and maintaining RLS in a Direct Lake environment.
