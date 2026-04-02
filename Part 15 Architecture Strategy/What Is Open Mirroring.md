@@ -130,6 +130,5 @@ Edge cases include scenarios where the network connection between the data sourc
 |---------|------|-------------|
 | 1.0 | 2026-01-15 | Initial documentation |
 
----
 
 This documentation provides a comprehensive overview of open mirroring, covering its conceptual model, terminology, core concepts, and standard usage patterns. It serves as a stable reference for understanding and implementing open mirroring in distributed systems.
