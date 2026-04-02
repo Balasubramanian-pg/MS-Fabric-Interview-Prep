@@ -159,6 +159,5 @@ Provide exactly **five** authoritative external references that substantiate or 
 |---------|------|-------------|
 | 1.0 | 2026-01-14 | Initial documentation |
 
----
 
 This documentation provides a comprehensive overview of using Microsoft Purview Hub inside the Fabric Portal, covering conceptual models, terminology, core concepts, and standard practices. It serves as a stable reference for understanding and implementing effective data governance and management within this ecosystem.
