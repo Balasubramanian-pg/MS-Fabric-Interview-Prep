@@ -158,5 +158,3 @@ The following five authoritative external references substantiate or inform this
 | Version | Date | Description |
 |---------|------|-------------|
 | 1.0 | 2026-01-15 | Initial documentation |
-
----
