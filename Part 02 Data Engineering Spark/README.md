@@ -23,5 +23,4 @@ This folder contains the following study materials:
 * [What Is Z-ordering.md](./What%20Is%20Z-ordering.md)
 * [What Languages Are Supported In Fabric Notebooks.md](./What%20Languages%20Are%20Supported%20In%20Fabric%20Notebooks.md)
 
----
 *Last updated by Auto-Indexer*
