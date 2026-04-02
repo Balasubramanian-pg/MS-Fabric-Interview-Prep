@@ -143,6 +143,5 @@ Related topics include:
 |---------|------|-------------|
 | 1.0 | 2026-01-15 | Initial documentation |
 
----
 
 Note: This documentation is a comprehensive guide to the Trusted Workspace Access Feature, covering its conceptual model, terminology, constraints, and standard usage patterns. It is intended to serve as a stable reference for implementers, users, and stakeholders.
