@@ -137,6 +137,5 @@ Edge cases include scenarios where a shortcut points to a resource on a network 
 |---------|------|-------------|
 | 1.0 | 2026-01-15 | Initial documentation |
 
----
 
 This documentation provides a comprehensive framework for understanding and addressing issues related to shortcuts showing access denied despite having permissions. It covers conceptual models, terminology, core concepts, and standard practices, offering a stable reference for users and administrators.
