@@ -161,6 +161,5 @@ Provide exactly **five** authoritative external references that substantiate or 
 |---------|------|-------------|
 | 1.0 | 2026-01-15 | Initial documentation |
 
----
 
 This comprehensive documentation provides a foundational understanding of how to search for PII across all lakehouses, covering conceptual models, terminology, core concepts, and standard practices. It serves as a stable reference for organizations seeking to manage PII effectively and maintain compliance with regulatory requirements.
