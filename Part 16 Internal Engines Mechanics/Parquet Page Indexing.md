@@ -167,6 +167,5 @@ The following authoritative external references substantiate or inform this topi
 |---------|------|-------------|
 | 1.0 | 2026-01-15 | Initial documentation |
 
----
 
 Note: This documentation is a comprehensive guide to Parquet Page Indexing, covering its conceptual model, terminology, core concepts, and standard usage patterns. It is intended to serve as a stable reference for developers, engineers, and researchers working with Parquet files and big data storage systems.
