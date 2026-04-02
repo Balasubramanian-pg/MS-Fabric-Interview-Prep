@@ -143,6 +143,5 @@ Edge cases include:
 |---------|------|-------------|
 | 1.0 | 2026-01-14 | Initial documentation |
 
----
 
 This documentation provides a comprehensive overview of the topic of mirroring a database into a lakehouse or warehouse. It defines the conceptual model, terminology, constraints, and standard usage patterns, and provides guidance on common patterns, anti-patterns, and edge cases. The references provided are authoritative and informative, and the change log is maintained to track updates to the documentation.
