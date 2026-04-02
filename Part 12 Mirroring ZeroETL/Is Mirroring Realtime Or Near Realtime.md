@@ -4,5 +4,4 @@
 
 What is the latency?
 
----
 *Auto-generated from interview prep list.*
