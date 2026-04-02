@@ -154,6 +154,5 @@ Provide exactly **five** authoritative external references that substantiate or 
 |---------|------|-------------|
 | 1.0 | 2026-01-14 | Initial documentation |
 
----
 
 This documentation provides a comprehensive guide to calculating the CU capacity unit cost of a specific Spark Notebook run, covering conceptual models, terminology, core concepts, and standard models. By following this documentation, users can optimize their resource utilization and cost management in cloud-based big data processing.
