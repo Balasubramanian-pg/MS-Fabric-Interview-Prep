@@ -144,6 +144,5 @@ Related topics include:
 |---------|------|-------------|
 | 1.0 | 2026-01-14 | Initial documentation |
 
----
 
 This documentation provides a comprehensive overview of Private Link in a SaaS environment, including its conceptual model, terminology, constraints, and standard usage patterns. It serves as a stable reference for understanding and implementing Private Link in a SaaS environment.
