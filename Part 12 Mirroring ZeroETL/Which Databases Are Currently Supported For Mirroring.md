@@ -4,5 +4,4 @@
 
 (Cosmos DB, Azure SQL, Snowflake, etc.).
 
----
 *Auto-generated from interview prep list.*
