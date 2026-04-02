@@ -159,6 +159,5 @@ Provide exactly **five** authoritative external references that substantiate or 
 |---------|------|-------------|
 | 1.0 | 2026-01-15 | Initial documentation |
 
----
 
 This documentation provides a comprehensive overview of Policy-Based Access Control (PBAC) in Fabric, covering its conceptual model, core concepts, standard model, and common patterns, as well as anti-patterns and edge cases. It serves as a stable reference for understanding and implementing PBAC in Fabric environments.
