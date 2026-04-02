@@ -154,6 +154,5 @@ Provide exactly **five** authoritative external references that substantiate or 
 |---------|------|-------------|
 | 1.0 | 2026-01-15 | Initial documentation |
 
----
 
 This comprehensive documentation provides a thorough understanding of the concurrency limit for T-SQL queries in a warehouse, covering conceptual models, terminology, core concepts, standard models, common patterns, anti-patterns, edge cases, and authoritative references.
