@@ -23,5 +23,4 @@ This folder contains the following study materials:
 * [Text Analytics At Scale.md](./Text%20Analytics%20At%20Scale.md)
 * [Vector Databases In Fabric.md](./Vector%20Databases%20In%20Fabric.md)
 
----
 *Last updated by Auto-Indexer*
