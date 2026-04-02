@@ -136,6 +136,5 @@ Edge cases include scenarios where resources are scarce, jobs have conflicting p
 |---------|------|-------------|
 | 1.0 | 2026-01-15 | Initial documentation |
 
----
 
 Note: This documentation is a comprehensive and authoritative guide to the Polaris Engine, covering its conceptual model, terminology, constraints, and standard usage patterns. It is intended to serve as a stable reference for developers, administrators, and users of the Polaris Engine.
