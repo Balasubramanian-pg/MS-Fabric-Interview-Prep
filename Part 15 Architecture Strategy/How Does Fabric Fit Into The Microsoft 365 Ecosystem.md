@@ -135,6 +135,5 @@ Edge cases include handling large datasets, supporting real-time analytics, and 
 | 1.0 | 2026-01-15 | Initial documentation |
 | 1.1 | 2026-02-01 | Updated references and added edge case considerations |
 
----
 
 This documentation aims to provide a comprehensive and authoritative guide to understanding how Microsoft Fabric integrates into the Microsoft 365 ecosystem, facilitating data-driven decision-making and enhanced productivity.
