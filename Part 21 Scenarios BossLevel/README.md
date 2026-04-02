@@ -13,5 +13,4 @@ This folder contains the following study materials:
 * [The Smallfile Nightmare.md](./The%20Smallfile%20Nightmare.md)
 * [The Zeroetl Pitch.md](./The%20Zeroetl%20Pitch.md)
 
----
 *Last updated by Auto-Indexer*
