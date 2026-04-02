@@ -23,5 +23,4 @@ This folder contains the following study materials:
 * [What Is The Role Of The Capacity In Fabric.md](./What%20Is%20The%20Role%20Of%20The%20Capacity%20In%20Fabric.md)
 * [What Is Universal Security In Fabric.md](./What%20Is%20Universal%20Security%20In%20Fabric.md)
 
----
 *Last updated by Auto-Indexer*
