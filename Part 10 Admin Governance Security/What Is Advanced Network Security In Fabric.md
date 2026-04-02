@@ -131,6 +131,5 @@ Edge cases and boundary conditions in Advanced Network Security in Fabric includ
 |---------|------|-------------|
 | 1.0 | 2026-01-14 | Initial documentation |
 
----
 
 This documentation provides a comprehensive overview of Advanced Network Security in Fabric, including its conceptual model, terminology, constraints, and standard usage patterns. It serves as a stable reference for understanding and implementing secure network infrastructures.
