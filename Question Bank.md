@@ -1,6 +1,5 @@
 To help you ace your Microsoft Fabric interview, I have organized 100 questions into key categories. These range from fundamental concepts to advanced scenarios you'll likely face in technical rounds.
 
----
 
 ## **Part 1: Foundational & Architecture (1–20)**
 
@@ -25,7 +24,6 @@ To help you ace your Microsoft Fabric interview, I have organized 100 questions 
 19. **What is the difference between a "Lakehouse" and a "Warehouse"?** A Lakehouse is Spark-centric and supports files/tables; a Warehouse is T-SQL centric with full ACID transactions.
 20. **What is "Universal Security" in Fabric?** The ability to define a security policy once in OneLake that applies across Spark, SQL, and Power BI.
 
----
 
 ## **Part 2: Data Engineering & Spark (21–40)**
 
