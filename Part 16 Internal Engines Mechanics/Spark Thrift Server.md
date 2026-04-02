@@ -145,6 +145,5 @@ The following properties must always hold true in the standard model:
 |---------|------|-------------|
 | 1.0 | 2026-01-15 | Initial documentation |
 
----
 
 This documentation provides a comprehensive overview of the Spark Thrift Server, including its conceptual model, terminology, constraints, and standard usage patterns. It serves as a stable reference for developers, administrators, and users of the Spark Thrift Server.
