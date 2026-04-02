@@ -23,5 +23,4 @@ This folder contains the following study materials:
 * [Version Control For Semantic Models.md](./Version%20Control%20For%20Semantic%20Models.md)
 * [Workspace Template Creation.md](./Workspace%20Template%20Creation.md)
 
----
 *Last updated by Auto-Indexer*
