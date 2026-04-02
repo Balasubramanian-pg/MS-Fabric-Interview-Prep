@@ -160,6 +160,5 @@ Provide exactly **five** authoritative external references that substantiate or 
 | 1.1 | 2026-02-01 | Added section on virtualization security and updated references |
 | 1.2 | 2026-03-15 | Clarified the definition of workspace and isolation mechanisms, and expanded the section on common patterns |
 
----
 
 This documentation is subject to regular review and update to ensure it remains accurate, relevant, and effective in guiding the implementation of workspace isolation.
