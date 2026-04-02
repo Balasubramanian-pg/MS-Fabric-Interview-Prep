@@ -139,6 +139,5 @@ Related topics to capacity smoothing include:
 |---------|------|-------------|
 | 1.0 | 2026-01-14 | Initial documentation |
 
----
 
 Note: This documentation is a comprehensive and authoritative guide to capacity smoothing, providing a conceptual model, terminology, and standard usage patterns. It is intended to serve as a stable reference for operations management and supply chain optimization professionals.
