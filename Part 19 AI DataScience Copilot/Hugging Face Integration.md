@@ -42,7 +42,7 @@ Provide precise definitions for key terms.
 Every integration point begins with a Repository. Unlike standard code repositories, these are optimized for Large File Storage (LFS). A repository is identified by a unique namespace (`namespace/repo_name`) and supports branching, tagging, and commit-level versioning.
 
 ### 2. Modality Agnosticism
-[Hugging Face Integration](Part 19 AI DataScience Copilot/Hugging Face Integration.md) is not limited to text. It treats various modalities-Natural Language Processing (NLP), Computer Vision (CV), Audio, Multimodal, and Reinforcement Learning (RL)—as first-class citizens, using standardized metadata to signal the expected input/output tensors.
+[Hugging Face Integration](Part 19 AI DataScience Copilot/Hugging Face Integration.md) is not limited to text. It treats various modalities-Natural Language Processing (NLP), Computer Vision (CV), Audio, Multimodal, and Reinforcement Learning (RL)-as first-class citizens, using standardized metadata to signal the expected input/output tensors.
 
 ### 3. The "Model Card" as Contract
 The Model Card serves as the primary interface between the model producer and the consumer. It contains critical integration data, including:
