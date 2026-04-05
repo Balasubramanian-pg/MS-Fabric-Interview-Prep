@@ -5,7 +5,7 @@ Canonical documentation for [Responsible Ai](Part 19 AI DataScience Copilot/Resp
 ## Purpose
 Responsible AI (RAI) is a framework for the ethical, transparent, and accountable development and deployment of artificial intelligence systems. It exists to address the socio-technical challenges inherent in autonomous and semi-autonomous systems, ensuring that AI technologies align with human values, legal requirements, and societal expectations. 
 
-The primary problem space RAI addresses is the mitigation of unintended consequences-such as systemic bias, privacy violations, and safety failures—that can arise when complex algorithmic models interact with real-world data and human populations.
+The primary problem space RAI addresses is the mitigation of unintended consequences-such as systemic bias, privacy violations, and safety failures-that can arise when complex algorithmic models interact with real-world data and human populations.
 
 > [!NOTE]
 > This documentation is intended to be implementation-agnostic and authoritative.
