@@ -3,7 +3,7 @@
 Canonical documentation for [Synapseml Library](Part 19 AI DataScience Copilot/Synapseml Library.md). This document defines concepts, terminology, and standard usage.
 
 ## Purpose
-The SynapseML library (formerly MMLSpark) exists to solve the problem of fragmentation and complexity in the distributed machine learning ecosystem. While Apache Spark provides a robust framework for data processing, integrating specialized machine learning tools-such as deep learning frameworks, gradient boosting machines, and web-based microservices—often requires significant boilerplate code and manual orchestration.
+The SynapseML library (formerly MMLSpark) exists to solve the problem of fragmentation and complexity in the distributed machine learning ecosystem. While Apache Spark provides a robust framework for data processing, integrating specialized machine learning tools-such as deep learning frameworks, gradient boosting machines, and web-based microservices-often requires significant boilerplate code and manual orchestration.
 
 SynapseML addresses this by providing a unified, scalable framework that allows developers to compose heterogeneous ML tasks into a single, cohesive SparkML pipeline. It aims to democratize large-scale machine learning by abstracting the complexities of distributed computing for specialized domains like computer vision, text analytics, and predictive modeling.
 
