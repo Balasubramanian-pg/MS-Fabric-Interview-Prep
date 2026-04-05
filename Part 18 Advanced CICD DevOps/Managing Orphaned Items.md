@@ -3,7 +3,7 @@
 Canonical documentation for Managing Orphaned Items. This document defines concepts, terminology, and standard usage.
 
 ## Purpose
-The management of orphaned items addresses the systemic challenge of maintaining data integrity, resource efficiency, and security within complex environments. In any hierarchical or relational system, entities often depend on associations with other entities to maintain their context, utility, or lifecycle. When these associations are severed—whether through manual intervention, system failure, or logic errors—the remaining entities become "orphaned." 
+The management of orphaned items addresses the systemic challenge of maintaining data integrity, resource efficiency, and security within complex environments. In any hierarchical or relational system, entities often depend on associations with other entities to maintain their context, utility, or lifecycle. When these associations are severed-whether through manual intervention, system failure, or logic errors—the remaining entities become "orphaned." 
 
 This documentation provides a framework for identifying, categorizing, and resolving these items to prevent resource leakage, security vulnerabilities, and operational "noise" that can degrade system performance and clarity.
 
