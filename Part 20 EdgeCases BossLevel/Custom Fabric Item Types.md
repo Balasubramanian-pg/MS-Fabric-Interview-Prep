@@ -5,7 +5,7 @@ Canonical documentation for [Custom Fabric Item Types](Part 20 EdgeCases BossLev
 ## Purpose
 The concept of [Custom Fabric Item Types](Part 20 EdgeCases BossLevel/Custom Fabric Item Types.md) exists to provide an extensibility framework for unified data platforms (Fabrics). As data ecosystems evolve, native item types (such as warehouses, lakes, or pipelines) may not satisfy every specialized domain or third-party integration requirement. 
 
-Custom Item Types allow developers to define new, first-class entities that inherit the platform's core capabilities—such as security, governance, lineage, and workspace management—while providing specialized functionality, unique metadata schemas, and custom user interfaces. This ensures a consistent user experience across disparate tools and services within a single ecosystem.
+Custom Item Types allow developers to define new, first-class entities that inherit the platform's core capabilities-such as security, governance, lineage, and workspace management—while providing specialized functionality, unique metadata schemas, and custom user interfaces. This ensures a consistent user experience across disparate tools and services within a single ecosystem.
 
 > [!NOTE]
 > This documentation is intended to be implementation-agnostic and authoritative.
