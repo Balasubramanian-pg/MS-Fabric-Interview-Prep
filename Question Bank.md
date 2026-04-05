@@ -18,7 +18,7 @@ To help you ace your Microsoft Fabric interview, I have organized 100 questions 
 13. **What is a "Tenant" in the context of Fabric?** The highest level of organization, typically representing a whole company.
 14. **What is the "Fabric Capacity Metrics App"?** An app used by admins to monitor CPU and memory consumption.
 15. **Does Fabric support Multi-cloud?** Yes, via shortcuts to AWS S3 and Google Cloud Storage.
-16. **What is a "Semantic Model"?** The new term for Power BI datasets—the logical layer containing relationships and measures.
+16. **What is a "Semantic Model"?** The new term for Power BI datasets-the logical layer containing relationships and measures.
 17. **How does Fabric handle data governance?** Primarily through integration with **Microsoft Purview**.
 18. **What is the "Real-Time Hub"?** A central place to manage all streaming data and events.
 19. **What is the difference between a "Lakehouse" and a "Warehouse"?** A Lakehouse is Spark-centric and supports files/tables; a Warehouse is T-SQL centric with full ACID transactions.
