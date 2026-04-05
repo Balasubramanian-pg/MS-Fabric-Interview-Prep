@@ -5,7 +5,7 @@ Canonical documentation for [Data Sanitization For Copilot](Part 19 AI DataScien
 ## Purpose
 Data Sanitization for Copilot addresses the critical intersection of Large Language Model (LLM) utility and data governance. As AI assistants (Copilots) integrate deeply into enterprise workflows, they require access to vast amounts of organizational data to provide relevant context. However, this data often contains sensitive information, noise, or malicious payloads.
 
-The purpose of data sanitization is to ensure that information provided to an LLM-whether through prompts, retrieval-augmented generation (RAG), or fine-tuning—is stripped of unauthorized sensitive elements while maintaining the semantic integrity required for the model to function effectively. This process mitigates risks related to data privacy breaches, regulatory non-compliance, and security vulnerabilities.
+The purpose of data sanitization is to ensure that information provided to an LLM-whether through prompts, retrieval-augmented generation (RAG), or fine-tuning-is stripped of unauthorized sensitive elements while maintaining the semantic integrity required for the model to function effectively. This process mitigates risks related to data privacy breaches, regulatory non-compliance, and security vulnerabilities.
 
 > [!NOTE]
 > This documentation is intended to be implementation-agnostic and authoritative.
