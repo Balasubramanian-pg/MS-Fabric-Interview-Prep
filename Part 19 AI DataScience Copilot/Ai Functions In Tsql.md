@@ -3,7 +3,7 @@
 Canonical documentation for [Ai Functions In Tsql](Part 19 AI DataScience Copilot/Ai Functions In Tsql.md). This document defines concepts, terminology, and standard usage.
 
 ## Purpose
-The integration of Artificial Intelligence (AI) functions within Transact-SQL (T-SQL) addresses the historical decoupling of relational data management and machine learning inference. Traditionally, data had to be extracted from the database (ETL/ELT) to external environments for AI processing. AI functions in T-SQL allow for "bringing the model to the data," enabling developers to perform complex tasks—such as natural language processing, sentiment analysis, and vector transformations—directly within the query engine. This reduces data movement, minimizes latency, and simplifies the application architecture.
+The integration of Artificial Intelligence (AI) functions within Transact-SQL (T-SQL) addresses the historical decoupling of relational data management and machine learning inference. Traditionally, data had to be extracted from the database (ETL/ELT) to external environments for AI processing. AI functions in T-SQL allow for "bringing the model to the data," enabling developers to perform complex tasks-such as natural language processing, sentiment analysis, and vector transformations—directly within the query engine. This reduces data movement, minimizes latency, and simplifies the application architecture.
 
 > [!NOTE]
 > This documentation is intended to be implementation-agnostic and authoritative. While specific syntax may vary across database engines (e.g., SQL Server, Azure SQL, Fabric), the underlying principles and logical structures remain consistent.
