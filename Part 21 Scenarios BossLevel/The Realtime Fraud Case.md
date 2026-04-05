@@ -64,7 +64,7 @@ The generally accepted model for a Realtime Fraud Case follows a linear pipeline
 Monitoring how often an attribute (email, device ID, credit card) appears within a sliding window (e.g., 1 minute, 1 hour, 24 hours). Rapid spikes typically indicate automated attacks or "carding" attempts.
 
 ### Behavioral Biometrics
-Analyzing *how* a user interacts with a system-such as typing speed, mouse movements, or touch pressure—to distinguish between a human owner and a bot or unauthorized user.
+Analyzing *how* a user interacts with a system-such as typing speed, mouse movements, or touch pressure-to distinguish between a human owner and a bot or unauthorized user.
 
 ### Geofencing and Impossible Travel
 Comparing the physical location of the current event with the location of the previous event. If the distance between the two exceeds the speed of commercial flight, the case is flagged for high risk.
