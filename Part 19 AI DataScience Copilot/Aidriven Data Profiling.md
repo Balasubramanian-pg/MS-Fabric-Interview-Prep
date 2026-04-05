@@ -5,7 +5,7 @@ Canonical documentation for [Aidriven Data Profiling](Part 19 AI DataScience Cop
 ## Purpose
 AI-driven Data Profiling exists to automate the discovery, analysis, and assessment of data assets within increasingly complex and high-volume data ecosystems. Traditional data profiling relies on manual inspection and static, rule-based queries, which fail to scale and often miss non-obvious patterns. 
 
-The primary problem space addressed is the "Data Knowledge Gap"—the discrepancy between the volume of data collected and the human capacity to understand its quality, structure, and semantic meaning. By leveraging machine learning (ML) and artificial intelligence (AI), this discipline transforms raw metadata into actionable intelligence, enabling proactive data governance, accelerated migration, and improved data trust.
+The primary problem space addressed is the "Data Knowledge Gap"-the discrepancy between the volume of data collected and the human capacity to understand its quality, structure, and semantic meaning. By leveraging machine learning (ML) and artificial intelligence (AI), this discipline transforms raw metadata into actionable intelligence, enabling proactive data governance, accelerated migration, and improved data trust.
 
 > [!NOTE]
 > This documentation is intended to be implementation-agnostic and authoritative.
