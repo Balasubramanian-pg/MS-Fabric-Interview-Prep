@@ -5,7 +5,7 @@ Canonical documentation for [Power Bi Direct Lake Fallback](Part 20 EdgeCases Bo
 ## Purpose
 The Direct Lake Fallback mechanism serves as a high-availability and compatibility bridge within the unified data lake architecture. Its primary purpose is to ensure service continuity for analytical queries when the optimized Direct Lake storage path is unavailable or unsupported. 
 
-Direct Lake mode aims to provide the performance of Import mode with the real-time nature of Direct Query by loading Parquet-formatted data directly from a data lake into the engine memory. However, technical constraints-such as memory limits, security configurations, or unsupported query features—may prevent this direct path. Fallback provides a graceful degradation strategy, transitioning the query execution to a secondary Direct Query path via a SQL endpoint to maintain report availability at the cost of increased latency.
+Direct Lake mode aims to provide the performance of Import mode with the real-time nature of Direct Query by loading Parquet-formatted data directly from a data lake into the engine memory. However, technical constraints-such as memory limits, security configurations, or unsupported query features-may prevent this direct path. Fallback provides a graceful degradation strategy, transitioning the query execution to a secondary Direct Query path via a SQL endpoint to maintain report availability at the cost of increased latency.
 
 > [!NOTE]
 > This documentation is intended to be implementation-agnostic and authoritative regarding the architectural behavior of the fallback mechanism.
