@@ -3,7 +3,7 @@
 Canonical documentation for [Workspace Migration Across Capacities](Part 20 EdgeCases BossLevel/Workspace Migration Across Capacities.md). This document defines concepts, terminology, and standard usage.
 
 ## Purpose
-[Workspace Migration Across Capacities](Part 20 EdgeCases BossLevel/Workspace Migration Across Capacities.md) addresses the requirement to decouple logical work environments from their underlying physical or virtual resource allocations. In distributed systems and cloud architectures, a "Capacity" represents a finite pool of compute, memory, and storage resources. As organizational needs evolve—due to scaling requirements, cost optimization, or compliance mandates—workspaces must be moved between these resource pools without compromising data integrity or operational continuity.
+[Workspace Migration Across Capacities](Part 20 EdgeCases BossLevel/Workspace Migration Across Capacities.md) addresses the requirement to decouple logical work environments from their underlying physical or virtual resource allocations. In distributed systems and cloud architectures, a "Capacity" represents a finite pool of compute, memory, and storage resources. As organizational needs evolve-due to scaling requirements, cost optimization, or compliance mandates—workspaces must be moved between these resource pools without compromising data integrity or operational continuity.
 
 This topic establishes the framework for reassigning the resource provider of a logical container while maintaining the relationships, permissions, and state of the assets within that container.
 
