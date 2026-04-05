@@ -3,7 +3,7 @@
 Canonical documentation for Diffing Notebooks. This document defines concepts, terminology, and standard usage.
 
 ## Purpose
-Diffing Notebooks addresses the challenge of identifying, visualizing, and reconciling differences between versions of computational notebooks (e.g., `.ipynb` files). Unlike standard source code files, notebooks are structured documents—typically stored as JSON—that encapsulate code, rich text (Markdown), execution metadata, and multimedia outputs. 
+Diffing Notebooks addresses the challenge of identifying, visualizing, and reconciling differences between versions of computational notebooks (e.g., `.ipynb` files). Unlike standard source code files, notebooks are structured documents-typically stored as JSON—that encapsulate code, rich text (Markdown), execution metadata, and multimedia outputs. 
 
 Standard line-based diffing tools often fail to provide meaningful insights for notebooks because minor changes in the document structure or non-essential metadata (such as execution counts or timing data) generate significant "noise." This topic exists to define the methodologies for isolating semantic changes in logic from incidental changes in document state.
 
