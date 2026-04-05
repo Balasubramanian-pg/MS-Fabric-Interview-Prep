@@ -41,7 +41,7 @@ Provide precise definitions for key terms.
 [Fabric Home Customization](Part 20 EdgeCases BossLevel/Fabric Home Customization.md) relies on the separation of the **Infrastructure Layer** (the physical hardware and connectivity) from the **Experience Layer** (the user interface and logic). This ensures that hardware can be replaced or upgraded without losing the customized logic applied by the user.
 
 ### 2. Contextual Awareness
-Customization is not static. A robust Fabric recognizes context-such as time of day, occupancy, environmental conditions, and active Personas—to apply the correct customization profile dynamically.
+Customization is not static. A robust Fabric recognizes context-such as time of day, occupancy, environmental conditions, and active Personas-to apply the correct customization profile dynamically.
 
 ### 3. Persistence and Portability
 Customizations must be stored in a state-aware repository. This allows a user’s "Home" configuration to remain consistent even if the physical location changes or if the user interacts with the Fabric through different interfaces (mobile, voice, or spatial computing).
