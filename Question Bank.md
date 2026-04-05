@@ -107,7 +107,7 @@ To help you ace your Microsoft Fabric interview, I have organized 100 questions 
 86. **How do you track ML experiments?** Using **MLflow** integration.
 87. **What is "Predict" in Fabric?** A T-SQL function to run ML model scoring directly in SQL.
 88. **How do you register an ML Model?** Within the Data Science experience using the Model registry.
-89. **What is the "Direct Lake" benefit?** Zero latency—reports update as soon as the data is written to OneLake.
+89. **What is the "Direct Lake" benefit?** Zero latency-reports update as soon as the data is written to OneLake.
 90. **Can you use DAX in Fabric?** Yes, DAX is the language for measures in Semantic Models.
 91. **What is "Git Integration"?** Connecting a Fabric workspace to an Azure DevOps or GitHub repo for CI/CD.
 92. **How do you deploy from Dev to Prod?** Using **Deployment Pipelines**.
