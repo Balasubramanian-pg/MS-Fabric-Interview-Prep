@@ -74,7 +74,7 @@ Administrators monitor the "Burn Rate" and "Carryover" metrics to identify trend
 Using the attribution metrics to export usage data to financial systems. This allows organizations to distribute the cost of a single large capacity across multiple business units based on their actual CU consumption.
 
 ### Workload Optimization
-Identifying "Top Consumers"—specific items that use a disproportionate amount of resources. This allows developers to target specific queries or processes for refactoring to improve overall system efficiency.
+Identifying "Top Consumers"-specific items that use a disproportionate amount of resources. This allows developers to target specific queries or processes for refactoring to improve overall system efficiency.
 
 ## Anti-Patterns
 
