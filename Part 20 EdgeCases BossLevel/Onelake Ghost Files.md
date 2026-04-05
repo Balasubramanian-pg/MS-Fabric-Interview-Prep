@@ -69,7 +69,7 @@ A Ghost File represents a failure to move from step 2 to step 3, or a failure in
 ## Edge Cases
 *   **Zero-Byte Ghosts:** A file that exists in both layers but contains no data due to a truncated write. While technically "present," it functions as a ghost for downstream analytical processes.
 *   **Permission-Induced Ghosting:** A file that appears in a listing but is "missing" to a specific user because the metadata layer is visible, but the storage layer's security principal has not yet synchronized the ACLs.
-*   **Concurrent Rename/Delete:** Two processes act on the same file simultaneously—one renames it, the other deletes it. The resulting state may leave a metadata entry for the new name pointing to a deleted physical location.
+*   **Concurrent Rename/Delete:** Two processes act on the same file simultaneously-one renames it, the other deletes it. The resulting state may leave a metadata entry for the new name pointing to a deleted physical location.
 
 ## Related Topics
 *   **Distributed Systems Consistency (CAP Theorem)**
