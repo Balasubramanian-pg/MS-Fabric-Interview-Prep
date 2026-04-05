@@ -43,7 +43,7 @@ Provide precise definitions for key terms.
 ## Core Concepts
 
 ### 1. Resource Locality
-Resource locality refers to the proximity of capacity to the consumer. In a [Multigeo Capacity](Part 20 EdgeCases BossLevel/Multigeo Capacity.md) model, locality is prioritized to minimize "tromboning"—the inefficient routing of data across long distances and back again.
+Resource locality refers to the proximity of capacity to the consumer. In a [Multigeo Capacity](Part 20 EdgeCases BossLevel/Multigeo Capacity.md) model, locality is prioritized to minimize "tromboning"-the inefficient routing of data across long distances and back again.
 
 ### 2. Logical Unification vs. Physical Distribution
 While resources are physically distributed across the globe, [Multigeo Capacity](Part 20 EdgeCases BossLevel/Multigeo Capacity.md) provides a "single pane of glass" for management. This allows administrators to define policies globally while the system enforces them locally.
