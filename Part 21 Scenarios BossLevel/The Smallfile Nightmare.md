@@ -39,7 +39,7 @@ Provide precise definitions for key terms.
 ## Core Concepts
 
 ### The Metadata-to-Data Ratio
-In a healthy storage environment, the ratio of metadata to actual data is negligible. In a "Smallfile Nightmare," this ratio shifts. Because every file—regardless of size—requires a discrete entry in the file system index (inode, object registry, or name node), storing one million 1KB files consumes significantly more system resources than storing one 1GB file, despite the total data volume being identical.
+In a healthy storage environment, the ratio of metadata to actual data is negligible. In a "Smallfile Nightmare," this ratio shifts. Because every file-regardless of size—requires a discrete entry in the file system index (inode, object registry, or name node), storing one million 1KB files consumes significantly more system resources than storing one 1GB file, despite the total data volume being identical.
 
 ### Seek Time vs. Transfer Time
 Efficiency in data retrieval is governed by the relationship between the time spent locating data (seek time/latency) and the time spent reading it (transfer time). Small files force the system to spend the majority of its cycle time on "seeks" (opening connections, looking up metadata, moving disk heads), resulting in a collapse of effective throughput.
