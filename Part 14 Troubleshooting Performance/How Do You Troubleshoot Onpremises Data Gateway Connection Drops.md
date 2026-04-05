@@ -148,7 +148,7 @@ The following authoritative external references substantiate or inform this topi
    National Institute of Standards and Technology  
    https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-53r5.pdf  
    *Justification:* Authoritative guidance on security and privacy controls for federal information systems and organizations.
-5. **ISO/IEC 27001:2013: Information technology - Security techniques - Information security management systems — Requirements**  
+5. **ISO/IEC 27001:2013: Information technology - Security techniques - Information security management systems - Requirements**  
    International Organization for Standardization  
    https://www.iso.org/standard/54534.html  
    *Justification:* International standard for information security management systems, providing a framework for managing and reducing information security risks.
