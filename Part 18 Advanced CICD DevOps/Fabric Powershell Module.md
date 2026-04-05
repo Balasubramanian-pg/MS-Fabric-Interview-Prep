@@ -3,7 +3,7 @@
 Canonical documentation for Fabric Powershell Module. This document defines concepts, terminology, and standard usage.
 
 ## Purpose
-The Fabric PowerShell Module exists to provide a programmatic, command-line interface for the administration, orchestration, and automation of a unified data fabric environment. It addresses the need for scalable management of distributed data architectures, enabling administrators and engineers to perform complex operations-such as resource provisioning, security configuration, and metadata management—without relying on graphical user interfaces. 
+The Fabric PowerShell Module exists to provide a programmatic, command-line interface for the administration, orchestration, and automation of a unified data fabric environment. It addresses the need for scalable management of distributed data architectures, enabling administrators and engineers to perform complex operations-such as resource provisioning, security configuration, and metadata management-without relying on graphical user interfaces. 
 
 By abstracting the underlying REST APIs into standardized cmdlets, the module facilitates the integration of data fabric management into DevOps pipelines, disaster recovery workflows, and enterprise-scale governance frameworks.
 
