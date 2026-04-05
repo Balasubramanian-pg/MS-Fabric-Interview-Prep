@@ -38,7 +38,7 @@ Clarify what is in scope and out of scope for this topic.
 ## Core Concepts
 
 ### Determinism and Idempotency
-For an automated test to be valuable, it must be deterministic. A test should fail only when there is a defect or a deliberate change in requirements. Idempotency ensures that running a test multiple times-or in different orders—does not alter the outcome or the state of the system in a way that affects subsequent tests.
+For an automated test to be valuable, it must be deterministic. A test should fail only when there is a defect or a deliberate change in requirements. Idempotency ensures that running a test multiple times-or in different orders-does not alter the outcome or the state of the system in a way that affects subsequent tests.
 
 ### The Feedback Loop
 Automated testing is the cornerstone of the modern development lifecycle. The "tightness" of the feedback loop (the time between writing code and receiving a test result) directly correlates with development velocity.
