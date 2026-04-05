@@ -3,7 +3,7 @@
 Canonical documentation for [Feature Store](Part 19 AI DataScience Copilot/Feature Store.md). This document defines concepts, terminology, and standard usage.
 
 ## Purpose
-The [Feature Store](Part 19 AI DataScience Copilot/Feature Store.md) exists to bridge the gap between raw data and machine learning (ML) models. In traditional software engineering, data is often transactional; in machine learning, data must be transformed into "features"-predictive signals—that are consumed by models during both training and inference.
+The [Feature Store](Part 19 AI DataScience Copilot/Feature Store.md) exists to bridge the gap between raw data and machine learning (ML) models. In traditional software engineering, data is often transactional; in machine learning, data must be transformed into "features"-predictive signals-that are consumed by models during both training and inference.
 
 The primary problems addressed by a [Feature Store](Part 19 AI DataScience Copilot/Feature Store.md) include:
 *   **Training-Serving Skew:** Discrepancies between the data used to train a model and the data provided to it during real-time inference.
