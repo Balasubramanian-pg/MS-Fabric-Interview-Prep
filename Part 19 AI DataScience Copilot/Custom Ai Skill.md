@@ -5,7 +5,7 @@ Canonical documentation for [Custom Ai Skill](Part 19 AI DataScience Copilot/Cus
 ## Purpose
 The [Custom Ai Skill](Part 19 AI DataScience Copilot/Custom Ai Skill.md) exists to provide a modular, reusable, and encapsulated unit of specialized intelligence within an AI ecosystem. While general-purpose Large Language Models (LLMs) possess broad reasoning capabilities, they often lack the specific domain logic, data constraints, or operational guardrails required for enterprise-grade tasks. 
 
-[Custom Ai Skill](Part 19 AI DataScience Copilot/Custom Ai Skill.md)s address the need for functional abstraction, allowing developers and system architects to define specific "capabilities" that can be invoked by an orchestrator, an agent, or a user. This approach moves AI development away from monolithic prompting toward a component-based architecture where discrete tasks—such as data extraction, sentiment analysis, or complex calculation—are isolated and optimized.
+[Custom Ai Skill](Part 19 AI DataScience Copilot/Custom Ai Skill.md)s address the need for functional abstraction, allowing developers and system architects to define specific "capabilities" that can be invoked by an orchestrator, an agent, or a user. This approach moves AI development away from monolithic prompting toward a component-based architecture where discrete tasks-such as data extraction, sentiment analysis, or complex calculation—are isolated and optimized.
 
 > [!NOTE]
 > This documentation is intended to be implementation-agnostic and authoritative.
