@@ -5,7 +5,7 @@ Canonical documentation for [Shortcut Chaining Performance](Part 20 EdgeCases Bo
 ## Purpose
 [Shortcut Chaining Performance](Part 20 EdgeCases BossLevel/Shortcut Chaining Performance.md) refers to the computational efficiency, latency, and resource utilization characteristics of executing a sequence of discrete automated tasks where the output or completion of one task triggers the initiation of the next. 
 
-This topic exists to address the performance overhead inherent in modular automation. As systems move toward micro-services and modular task execution, the "glue" between these modules—the chaining mechanism—becomes a critical factor in total system throughput and user-perceived responsiveness. This documentation provides a framework for evaluating the cost of abstraction in automated workflows.
+This topic exists to address the performance overhead inherent in modular automation. As systems move toward micro-services and modular task execution, the "glue" between these modules-the chaining mechanism—becomes a critical factor in total system throughput and user-perceived responsiveness. This documentation provides a framework for evaluating the cost of abstraction in automated workflows.
 
 > [!NOTE]
 > This documentation is intended to be implementation-agnostic and authoritative.
