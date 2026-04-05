@@ -5,7 +5,7 @@ To help you ace your Microsoft Fabric interview, I have organized 100 questions 
 
 1. **What is Microsoft Fabric?** A unified SaaS analytics platform that combines data integration, engineering, warehousing, and BI.
 2. **Is Fabric a SaaS or PaaS?** It is a **SaaS** (Software as a Service) offering.
-3. **Explain the "OneLake" concept.** It is the "OneDrive for data"—a single, unified, logical data lake for the entire organization.
+3. **Explain the "OneLake" concept.** It is the "OneDrive for data"-a single, unified, logical data lake for the entire organization.
 4. **What is a "Shortcuts" in OneLake?** A way to virtualize data from external sources (ADLS Gen2, S3) without moving or copying it.
 5. **What is the default storage format for Fabric?** **Delta Parquet.**
 6. **How does Fabric differ from Azure Synapse Analytics?** Fabric is SaaS-based and more integrated, whereas Synapse is PaaS-based and often requires managing separate resources.
